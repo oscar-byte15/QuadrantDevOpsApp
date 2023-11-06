@@ -1,0 +1,55 @@
+.login-bg {
+  background-color: #2d2d2d;
+  height: 100%;
+  width: 100%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.credits {
+  color: white;
+  background-color: black;
+  padding: 2px 5px;
+  font-size: 12px !important;
+  user-select: none;
+  height: 100%;
+}
+.credits a {
+  text-decoration: none;
+  color: white;
+}
+
+.MuiTextField-root.login-field {
+  background-color: white;
+  border-radius: 6px;
+}
+
+.MuiTextField-root.login-field input {
+  border-radius: 0 6px 6px 0 !important;
+  padding-left: 14px;
+}
+
+.MuiTextField-root.login-field p {
+  display: none;
+}
+
+.zooming {
+  animation-name: zooming;
+  animation-duration: 180s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zooming {
+  0% {
+    transform: scale(1);
+    transform-origin: left top;
+  }
+
+  100% {
+    transform: scale(1.8);
+    transform-origin: left top;
+  }
+}

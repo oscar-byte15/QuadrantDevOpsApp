@@ -1,0 +1,49 @@
+.comment-card .MuiCardHeader-content .MuiCardHeader-title {
+  font-size: 1.2rem;
+}
+
+.comment-card__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  color: #2d2d2d;
+}
+
+.comment-card__data-area {
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.comment-card__contact-area {
+  width: 100%;
+}
+
+.comment-card__comment-area {
+  flex-grow: 2 !important;
+  min-width: auto !important;
+}
+
+.comment-card__contact .MuiTypography-body1 {
+  margin-left: 10px !important;
+}
+
+.comment-card__contact .MuiSvgIcon-root {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 600px) {
+  .comment-card__data-area {
+    flex-direction: row;
+  }
+  .comment-card__contact-area {
+    width: 200px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+}
+
+.report-card .MuiCardHeader-root .MuiCardHeader-action {
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+}

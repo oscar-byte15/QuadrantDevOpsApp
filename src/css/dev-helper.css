@@ -1,0 +1,12 @@
+.helper-css {
+  position: fixed;
+  top: 0;
+  right: 15px;
+  background-color: #ff0000a8;
+  color: #fff;
+  z-index: 99999999999999;
+}
+
+.helper-css span {
+  padding: 4px;
+}

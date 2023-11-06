@@ -1,0 +1,30 @@
+html,
+body,
+#root {
+  font-size: 14px;
+  font-family: 'Roboto' !important;
+  background-color: #f1f1f1;
+}
+@media (max-width: 600px) {
+  html,
+  body,
+  #root {
+    font-size: 14px;
+  }
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+}

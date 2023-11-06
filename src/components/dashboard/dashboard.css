@@ -1,0 +1,16 @@
+/* .dashboard-container {
+  min-height: calc(100vh - 72px);
+}
+
+@media (min-width: 600px) {
+  .dashboard-container {
+    min-height: calc(100vh - 55px);
+  }
+} */
+
+.container {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  margin-top: 1rem;
+  padding-bottom: 4rem;
+}

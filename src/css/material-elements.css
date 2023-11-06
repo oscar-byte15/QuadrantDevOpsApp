@@ -1,0 +1,33 @@
+.form-actions {
+  margin-top: 1rem;
+}
+
+.table-actions button {
+  padding: 2px;
+}
+
+.input-error {
+  color: #f44336;
+  font-size: 0.75rem;
+  margin-top: 8px;
+  font-family: 'Roboto';
+}
+
+.MuiListItemText-primary {
+  font-size: 0.9rem !important;
+}
+
+.MuiListItemText-secondary {
+  font-size: 0.85rem !important;
+}
+
+.MuiSnackbarContent-root {
+  font-size: 0.9rem !important;
+}
+
+.MuiStepLabel-label {
+  font-size: 1rem !important;
+}
+.MuiStepIcon-root {
+  font-size: 1.8rem !important;
+}

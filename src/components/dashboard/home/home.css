@@ -1,0 +1,35 @@
+.gauge-score {
+  font-weight: 500 !important;
+  margin-top: 0.3rem !important;
+  opacity: 0.8;
+  font-size: 1.85rem !important;
+  padding: 0.1em 0;
+}
+
+.gauge-title {
+  font-size: 1.5rem !important;
+  color: #2d2d2d;
+  opacity: 0.8;
+  line-height: 1.2 !important;
+}
+
+.table-indicator-dif {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-right: 0.2em;
+  margin-top: 0.1em;
+}
+.dif-icon {
+  font-size: 1.6em;
+  position: relative;
+  left: 4px;
+  top: 6px;
+}
+
+.typography-icon {
+  color: #6b6b6b;
+  font-size: 1.2em !important;
+  position: relative;
+  left: -2px;
+  top: 2px;
+}

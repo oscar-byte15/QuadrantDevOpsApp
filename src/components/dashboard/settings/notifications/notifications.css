@@ -1,0 +1,15 @@
+.notif-chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.notif-chip-container li {
+  margin: 4px !important;
+}
+
+.notif-chip-container .MuiFormControl-root {
+  margin: 4px 16px !important;
+}

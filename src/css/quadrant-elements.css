@@ -1,0 +1,41 @@
+.quadrant-icon {
+  padding: 10px;
+}
+
+.quadrant-logo {
+  padding: 10px;
+}
+
+.fab {
+  position: fixed !important;
+  bottom: 40px;
+  right: 25px;
+}
+
+.select-all {
+  user-select: all;
+}
+
+.congratulation,
+.green {
+  color: #53dd6c;
+}
+
+.suggestion,
+.yellow {
+  color: #eec643;
+}
+
+.complaint,
+.red {
+  color: #e4572e;
+}
+
+.quadrant-container-card__content {
+  min-height: 500px;
+  justify-content: center;
+}
+
+input[type='checkbox'] {
+  accent-color: #6F6BA3
+}

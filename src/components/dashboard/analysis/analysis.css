@@ -1,0 +1,16 @@
+.dist-column-width {
+  width: 400px;
+}
+
+.score-column-width {
+  width: 125px;
+}
+
+.MuiTableRow-hover {
+  cursor: pointer;
+}
+
+.contained-table-container {
+  max-width: 1400px;
+  margin: auto;
+}

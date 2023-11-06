@@ -1,0 +1,11 @@
+.MuiTable-root {
+  font-size: 0.8rem !important;
+}
+
+.MuiTableHead-root {
+  font-size: 1.2em !important;
+}
+
+.MuiTableCell-root {
+  font-size: 1.1em !important;
+}

@@ -1,0 +1,15 @@
+header h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.8rem !important;
+  line-height: 1;
+  font-weight: 300;
+  flex-grow: 1;
+  text-align: left;
+}
+
+@media (min-width: 900px) {
+  header h1 {
+    text-align: left;
+  }
+}

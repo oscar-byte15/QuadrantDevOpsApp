@@ -1,0 +1,2869 @@
+[
+  {
+    "name": "Argentina",
+    "phone_code": "54",
+    "native": "Argentina",
+    "region": "Americas",
+    "subregion": "South America",
+    "timezones": [
+      {
+        "zoneName": "America/Argentina/Buenos_Aires",
+        "gmtOffset": -10800,
+        "gmtOffsetName": "UTC-03:00",
+        "abbreviation": "ART",
+        "tzName": "Argentina Time"
+      }
+    ],
+    "translations": {
+      "es": "Argentina"
+    },
+    "states": [
+      {
+        "name": "Buenos Aires",
+        "type": "province"
+      },
+      {
+        "name": "Catamarca",
+        "type": "province"
+      },
+      {
+        "name": "Chaco",
+        "type": "province"
+      },
+      {
+        "name": "Chubut",
+        "type": "province"
+      },
+      {
+        "name": "Ciudad Autónoma de Buenos Aires",
+        "type": "city"
+      },
+      {
+        "name": "Córdoba",
+        "type": "province"
+      },
+      {
+        "name": "Corrientes",
+        "type": "province"
+      },
+      {
+        "name": "Entre Ríos",
+        "type": "province"
+      },
+      {
+        "name": "Formosa",
+        "type": "province"
+      },
+      {
+        "name": "Jujuy",
+        "type": "province"
+      },
+      {
+        "name": "La Pampa",
+        "type": "province"
+      },
+      {
+        "name": "La Rioja",
+        "type": "province"
+      },
+      {
+        "name": "Mendoza",
+        "type": "province"
+      },
+      {
+        "name": "Misiones",
+        "type": "province"
+      },
+      {
+        "name": "Neuquén",
+        "type": "province"
+      },
+      {
+        "name": "Río Negro",
+        "type": "province"
+      },
+      {
+        "name": "Salta",
+        "type": "province"
+      },
+      {
+        "name": "San Juan",
+        "type": "province"
+      },
+      {
+        "name": "San Luis",
+        "type": "province"
+      },
+      {
+        "name": "Santa Cruz",
+        "type": "province"
+      },
+      {
+        "name": "Santa Fe",
+        "type": "province"
+      },
+      {
+        "name": "Santiago del Estero",
+        "type": "province"
+      },
+      {
+        "name": "Tierra del Fuego",
+        "type": "province"
+      },
+      {
+        "name": "Tucumán",
+        "type": "province"
+      }
+    ]
+  },
+  {
+    "name": "Bolivia",
+    "region": "Americas",
+    "subregion": "South America",
+    "timezones": [
+      {
+        "zoneName": "America/La_Paz",
+        "gmtOffset": -14400,
+        "gmtOffsetName": "UTC-04:00",
+        "abbreviation": "BOT",
+        "tzName": "Bolivia Time"
+      }
+    ],
+    "translations": {
+      "es": "Bolivia"
+    },
+    "states": [
+      {
+        "name": "Beni"
+      },
+      {
+        "name": "Chuquisaca"
+      },
+      {
+        "name": "Cochabamba"
+      },
+      {
+        "name": "La Paz"
+      },
+      {
+        "name": "Oruro"
+      },
+      {
+        "name": "Pando"
+      },
+      {
+        "name": "Potosí"
+      },
+      {
+        "name": "Santa Cruz"
+      },
+      {
+        "name": "Tarija"
+      }
+    ]
+  },
+  {
+    "name": "Chile",
+    "phone_code": "56",
+    "native": "Chile",
+    "region": "Americas",
+    "subregion": "South America",
+    "timezones": [
+      {
+        "zoneName": "America/Santiago",
+        "gmtOffset": -10800,
+        "gmtOffsetName": "UTC-03:00",
+        "abbreviation": "CLST",
+        "tzName": "Chile Summer Time"
+      }
+    ],
+    "translations": {
+      "es": "Chile"
+    },
+    "states": [
+      {
+        "name": "Aisén del General Carlos Ibañez del Campo",
+        "type": null
+      },
+      {
+        "name": "Antofagasta",
+        "type": null
+      },
+      {
+        "name": "Arica y Parinacota",
+        "type": null
+      },
+      {
+        "name": "Atacama",
+        "type": null
+      },
+      {
+        "name": "Biobío",
+        "type": null
+      },
+      {
+        "name": "Coquimbo",
+        "type": null
+      },
+      {
+        "name": "La Araucanía",
+        "type": null
+      },
+      {
+        "name": "Libertador General Bernardo O'Higgins",
+        "type": null
+      },
+      {
+        "name": "Los Lagos",
+        "type": null
+      },
+      {
+        "name": "Los Ríos",
+        "type": null
+      },
+      {
+        "name": "Magallanes y de la Antártica Chilena",
+        "type": null
+      },
+      {
+        "name": "Maule",
+        "type": null
+      },
+      {
+        "name": "Ñuble",
+        "type": null
+      },
+      {
+        "name": "Región Metropolitana de Santiago",
+        "type": null
+      },
+      {
+        "name": "Tarapacá",
+        "type": null
+      },
+      {
+        "name": "Valparaíso",
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "Colombia",
+    "phone_code": "57",
+    "native": "Colombia",
+    "region": "Americas",
+    "subregion": "South America",
+    "timezones": [
+      {
+        "zoneName": "America/Bogota",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "COT",
+        "tzName": "Colombia Time"
+      }
+    ],
+    "translations": {
+      "es": "Colombia"
+    },
+    "latitude": "4.00000000",
+    "longitude": "-72.00000000",
+    "states": [
+      {
+        "name": "Amazonas",
+        "type": null
+      },
+      {
+        "name": "Antioquia",
+        "type": null
+      },
+      {
+        "name": "Arauca",
+        "type": null
+      },
+      {
+        "name": "Atlántico",
+        "type": null
+      },
+      {
+        "name": "Bogotá D.C.",
+        "type": "capital district\t"
+      },
+      {
+        "name": "Bolívar",
+        "type": null
+      },
+      {
+        "name": "Boyacá",
+        "type": null
+      },
+      {
+        "name": "Caldas",
+        "type": null
+      },
+      {
+        "name": "Caquetá",
+        "type": null
+      },
+      {
+        "name": "Casanare",
+        "type": null
+      },
+      {
+        "name": "Cauca",
+        "type": null
+      },
+      {
+        "name": "Cesar",
+        "type": null
+      },
+      {
+        "name": "Chocó",
+        "type": null
+      },
+      {
+        "name": "Córdoba",
+        "type": null
+      },
+      {
+        "name": "Cundinamarca",
+        "type": null
+      },
+      {
+        "name": "Guainía",
+        "type": null
+      },
+      {
+        "name": "Guaviare",
+        "type": null
+      },
+      {
+        "name": "Huila",
+        "type": "department"
+      },
+      {
+        "name": "La Guajira",
+        "type": null
+      },
+      {
+        "name": "Magdalena",
+        "type": null
+      },
+      {
+        "name": "Meta",
+        "type": null
+      },
+      {
+        "name": "Nariño",
+        "type": null
+      },
+      {
+        "name": "Norte de Santander",
+        "type": null
+      },
+      {
+        "name": "Putumayo",
+        "type": null
+      },
+      {
+        "name": "Quindío",
+        "type": null
+      },
+      {
+        "name": "Risaralda",
+        "type": null
+      },
+      {
+        "name": "San Andrés, Providencia y Santa Catalina",
+        "type": null
+      },
+      {
+        "name": "Santander",
+        "type": null
+      },
+      {
+        "name": "Sucre",
+        "type": null
+      },
+      {
+        "name": "Tolima",
+        "type": null
+      },
+      {
+        "name": "Valle del Cauca",
+        "type": null
+      },
+      {
+        "name": "Vaupés",
+        "type": null
+      },
+      {
+        "name": "Vichada",
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "Ecuador",
+    "iso3": "ECU",
+    "iso2": "EC",
+    "numeric_code": "218",
+    "phone_code": "593",
+    "capital": "Quito",
+    "currency": "USD",
+    "currency_name": "United States dollar",
+    "currency_symbol": "$",
+    "tld": ".ec",
+    "native": "Ecuador",
+    "region": "Americas",
+    "subregion": "South America",
+    "timezones": [
+      {
+        "zoneName": "America/Guayaquil",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "ECT",
+        "tzName": "Ecuador Time"
+      },
+      {
+        "zoneName": "Pacific/Galapagos",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "GALT",
+        "tzName": "Galápagos Time"
+      }
+    ],
+    "translations": {
+      "kr": "에콰도르",
+      "br": "Equador",
+      "pt": "Equador",
+      "nl": "Ecuador",
+      "hr": "Ekvador",
+      "fa": "اکوادور",
+      "de": "Ecuador",
+      "es": "Ecuador",
+      "fr": "Équateur",
+      "ja": "エクアドル",
+      "it": "Ecuador",
+      "cn": "厄瓜多尔"
+    },
+    "latitude": "-2.00000000",
+    "longitude": "-77.50000000",
+    "emoji": "🇪🇨",
+    "emojiU": "U+1F1EA U+1F1E8",
+    "states": [
+      {
+        "id": 2923,
+        "name": "Azuay",
+        "state_code": "A",
+        "latitude": "-2.89430680",
+        "longitude": "-78.99683440",
+        "type": "province"
+      },
+      {
+        "id": 2920,
+        "name": "Bolívar",
+        "state_code": "B",
+        "latitude": "-1.70958280",
+        "longitude": "-79.04504290",
+        "type": "province"
+      },
+      {
+        "id": 2917,
+        "name": "Cañar",
+        "state_code": "F",
+        "latitude": "-2.55893150",
+        "longitude": "-78.93881910",
+        "type": "province"
+      },
+      {
+        "id": 2915,
+        "name": "Carchi",
+        "state_code": "C",
+        "latitude": "0.50269120",
+        "longitude": "-77.90425210",
+        "type": "province"
+      },
+      {
+        "id": 2925,
+        "name": "Chimborazo",
+        "state_code": "H",
+        "latitude": "-1.66479950",
+        "longitude": "-78.65432550",
+        "type": "province"
+      },
+      {
+        "id": 2921,
+        "name": "Cotopaxi",
+        "state_code": "X",
+        "latitude": "-0.83842060",
+        "longitude": "-78.66626780",
+        "type": "province"
+      },
+      {
+        "id": 2924,
+        "name": "El Oro",
+        "state_code": "O",
+        "latitude": "-3.25924130",
+        "longitude": "-79.95835410",
+        "type": "province"
+      },
+      {
+        "id": 2922,
+        "name": "Esmeraldas",
+        "state_code": "E",
+        "latitude": "0.96817890",
+        "longitude": "-79.65172020",
+        "type": "province"
+      },
+      {
+        "id": 2905,
+        "name": "Galápagos",
+        "state_code": "W",
+        "latitude": "-0.95376910",
+        "longitude": "-90.96560190",
+        "type": "province"
+      },
+      {
+        "id": 2914,
+        "name": "Guayas",
+        "state_code": "G",
+        "latitude": "-1.95748390",
+        "longitude": "-79.91927020",
+        "type": "province"
+      },
+      {
+        "id": 2911,
+        "name": "Imbabura",
+        "state_code": "I",
+        "latitude": "0.34997680",
+        "longitude": "-78.12601290",
+        "type": "province"
+      },
+      {
+        "id": 5068,
+        "name": "Loja",
+        "state_code": "L",
+        "latitude": "-3.99313000",
+        "longitude": "-79.20422000",
+        "type": "province"
+      },
+      {
+        "id": 2910,
+        "name": "Los Ríos",
+        "state_code": "R",
+        "latitude": "-1.02306070",
+        "longitude": "-79.46088970",
+        "type": "province"
+      },
+      {
+        "id": 2913,
+        "name": "Manabí",
+        "state_code": "M",
+        "latitude": "-1.05434340",
+        "longitude": "-80.45264400",
+        "type": "province"
+      },
+      {
+        "id": 2918,
+        "name": "Morona-Santiago",
+        "state_code": "S",
+        "latitude": "-2.30510620",
+        "longitude": "-78.11468660",
+        "type": "province"
+      },
+      {
+        "id": 2916,
+        "name": "Napo",
+        "state_code": "N",
+        "latitude": "-0.99559640",
+        "longitude": "-77.81296840",
+        "type": "province"
+      },
+      {
+        "id": 2926,
+        "name": "Orellana",
+        "state_code": "D",
+        "latitude": "-0.45451630",
+        "longitude": "-76.99502860",
+        "type": "province"
+      },
+      {
+        "id": 2907,
+        "name": "Pastaza",
+        "state_code": "Y",
+        "latitude": "-1.48822650",
+        "longitude": "-78.00310570",
+        "type": "province"
+      },
+      {
+        "id": 2927,
+        "name": "Pichincha",
+        "state_code": "P",
+        "latitude": "-0.14648470",
+        "longitude": "-78.47519450",
+        "type": "province"
+      },
+      {
+        "id": 2912,
+        "name": "Santa Elena",
+        "state_code": "SE",
+        "latitude": "-2.22671050",
+        "longitude": "-80.85949900",
+        "type": "province"
+      },
+      {
+        "id": 2919,
+        "name": "Santo Domingo de los Tsáchilas",
+        "state_code": "SD",
+        "latitude": "-0.25218820",
+        "longitude": "-79.18793830",
+        "type": "province"
+      },
+      {
+        "id": 2906,
+        "name": "Sucumbíos",
+        "state_code": "U",
+        "latitude": "0.08892310",
+        "longitude": "-76.88975570",
+        "type": "province"
+      },
+      {
+        "id": 2908,
+        "name": "Tungurahua",
+        "state_code": "T",
+        "latitude": "-1.26352840",
+        "longitude": "-78.56608520",
+        "type": "province"
+      },
+      {
+        "id": 2909,
+        "name": "Zamora Chinchipe",
+        "state_code": "Z",
+        "latitude": "-4.06558920",
+        "longitude": "-78.95035250",
+        "type": "province"
+      }
+    ]
+  },
+  {
+    "name": "Spain",
+    "iso3": "ESP",
+    "iso2": "ES",
+    "numeric_code": "724",
+    "phone_code": "34",
+    "capital": "Madrid",
+    "currency": "EUR",
+    "currency_name": "Euro",
+    "currency_symbol": "€",
+    "tld": ".es",
+    "native": "España",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "timezones": [
+      {
+        "zoneName": "Europe/Madrid",
+        "gmtOffset": 3600,
+        "gmtOffsetName": "UTC+01:00",
+        "abbreviation": "CET",
+        "tzName": "Central European Time"
+      }
+    ],
+    "translations": {
+      "es": "España"
+    },
+    "latitude": "40.00000000",
+    "longitude": "-4.00000000",
+    "states": [
+      {
+        "name": "Andalusia",
+        "type": null
+      },
+      {
+        "name": "Aragon",
+        "state_code": "AR",
+        "latitude": "41.59762750",
+        "longitude": "-0.90566230",
+        "type": null
+      },
+      {
+        "id": 1160,
+        "name": "Asturias",
+        "state_code": "AS",
+        "latitude": "43.36139530",
+        "longitude": "-5.85932670",
+        "type": null
+      },
+      {
+        "id": 1189,
+        "name": "Ávila",
+        "state_code": "AV",
+        "latitude": "40.69345110",
+        "longitude": "-4.89356270",
+        "type": null
+      },
+      {
+        "id": 1174,
+        "name": "Balearic Islands",
+        "state_code": "PM",
+        "latitude": "39.35877590",
+        "longitude": "2.73563280",
+        "type": null
+      },
+      {
+        "id": 1191,
+        "name": "Basque Country",
+        "state_code": "PV",
+        "latitude": "42.98962480",
+        "longitude": "-2.61892730",
+        "type": null
+      },
+      {
+        "id": 1146,
+        "name": "Burgos Province",
+        "state_code": "BU",
+        "latitude": "42.33807580",
+        "longitude": "-3.58126920",
+        "type": null
+      },
+      {
+        "id": 1185,
+        "name": "Canary Islands",
+        "state_code": "CN",
+        "latitude": "28.29156370",
+        "longitude": "-16.62913040",
+        "type": null
+      },
+      {
+        "id": 1170,
+        "name": "Cantabria",
+        "state_code": "CB",
+        "latitude": "43.18283960",
+        "longitude": "-3.98784270",
+        "type": null
+      },
+      {
+        "id": 1184,
+        "name": "Castile and León",
+        "state_code": "CL",
+        "latitude": "41.83568210",
+        "longitude": "-4.39763570",
+        "type": null
+      },
+      {
+        "id": 1205,
+        "name": "Castilla La Mancha",
+        "state_code": "CM",
+        "latitude": "39.27956070",
+        "longitude": "-3.09770200",
+        "type": null
+      },
+      {
+        "id": 1203,
+        "name": "Catalonia",
+        "state_code": "CT",
+        "latitude": "41.59115890",
+        "longitude": "1.52086240",
+        "type": null
+      },
+      {
+        "id": 1206,
+        "name": "Ceuta",
+        "state_code": "CE",
+        "latitude": "35.88938740",
+        "longitude": "-5.32134550",
+        "type": null
+      },
+      {
+        "id": 1190,
+        "name": "Extremadura",
+        "state_code": "EX",
+        "latitude": "39.49373920",
+        "longitude": "-6.06791940",
+        "type": null
+      },
+      {
+        "id": 1167,
+        "name": "Galicia",
+        "state_code": "GA",
+        "latitude": "42.57505540",
+        "longitude": "-8.13385580",
+        "type": null
+      },
+      {
+        "id": 1171,
+        "name": "La Rioja",
+        "state_code": "RI",
+        "latitude": "42.28707330",
+        "longitude": "-2.53960300",
+        "type": null
+      },
+      {
+        "id": 1200,
+        "name": "Léon",
+        "state_code": "LE",
+        "latitude": "42.59870410",
+        "longitude": "-5.56708390",
+        "type": null
+      },
+      {
+        "id": 1158,
+        "name": "Madrid",
+        "state_code": "MD",
+        "latitude": "40.41675150",
+        "longitude": "-3.70383220",
+        "type": null
+      },
+      {
+        "id": 1159,
+        "name": "Melilla",
+        "state_code": "ML",
+        "latitude": "35.29227750",
+        "longitude": "-2.93809730",
+        "type": null
+      },
+      {
+        "id": 1176,
+        "name": "Murcia",
+        "state_code": "MC",
+        "latitude": "38.13981410",
+        "longitude": "-1.36621600",
+        "type": null
+      },
+      {
+        "id": 1204,
+        "name": "Navarra",
+        "state_code": "NC",
+        "latitude": "42.69539090",
+        "longitude": "-1.67606910",
+        "type": null
+      },
+      {
+        "id": 1157,
+        "name": "Palencia Province",
+        "state_code": "P",
+        "latitude": "42.00968320",
+        "longitude": "-4.52879490",
+        "type": null
+      },
+      {
+        "id": 1147,
+        "name": "Salamanca Province",
+        "state_code": "SA",
+        "latitude": "40.95152630",
+        "longitude": "-6.23759470",
+        "type": null
+      },
+      {
+        "id": 1192,
+        "name": "Segovia Province",
+        "state_code": "SG",
+        "latitude": "40.94292960",
+        "longitude": "-4.10889420",
+        "type": null
+      },
+      {
+        "id": 1208,
+        "name": "Soria Province",
+        "state_code": "SO",
+        "latitude": "41.76654640",
+        "longitude": "-2.47903060",
+        "type": null
+      },
+      {
+        "id": 1175,
+        "name": "Valencia",
+        "state_code": "VC",
+        "latitude": "39.48401080",
+        "longitude": "-0.75328090",
+        "type": null
+      },
+      {
+        "id": 1183,
+        "name": "Valladolid Province",
+        "state_code": "VA",
+        "latitude": "41.65173750",
+        "longitude": "-4.72449500",
+        "type": null
+      },
+      {
+        "id": 1161,
+        "name": "Zamora Province",
+        "state_code": "ZA",
+        "latitude": "41.60957440",
+        "longitude": "-5.89871390",
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "Mexico",
+    "iso3": "MEX",
+    "iso2": "MX",
+    "numeric_code": "484",
+    "phone_code": "52",
+    "capital": "Mexico City",
+    "currency": "MXN",
+    "currency_name": "Mexican peso",
+    "currency_symbol": "$",
+    "tld": ".mx",
+    "native": "México",
+    "region": "Americas",
+    "subregion": "Central America",
+    "timezones": [
+      {
+        "zoneName": "America/Bahia_Banderas",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Cancun",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Chihuahua",
+        "gmtOffset": -25200,
+        "gmtOffsetName": "UTC-07:00",
+        "abbreviation": "MST",
+        "tzName": "Mountain Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Hermosillo",
+        "gmtOffset": -25200,
+        "gmtOffsetName": "UTC-07:00",
+        "abbreviation": "MST",
+        "tzName": "Mountain Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Matamoros",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Mazatlan",
+        "gmtOffset": -25200,
+        "gmtOffsetName": "UTC-07:00",
+        "abbreviation": "MST",
+        "tzName": "Mountain Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Merida",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Mexico_City",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Monterrey",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Ojinaga",
+        "gmtOffset": -25200,
+        "gmtOffsetName": "UTC-07:00",
+        "abbreviation": "MST",
+        "tzName": "Mountain Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Tijuana",
+        "gmtOffset": -28800,
+        "gmtOffsetName": "UTC-08:00",
+        "abbreviation": "PST",
+        "tzName": "Pacific Standard Time (North America"
+      }
+    ],
+    "translations": {
+      "kr": "멕시코",
+      "br": "México",
+      "pt": "México",
+      "nl": "Mexico",
+      "hr": "Meksiko",
+      "fa": "مکزیک",
+      "de": "Mexiko",
+      "es": "México",
+      "fr": "Mexique",
+      "ja": "メキシコ",
+      "it": "Messico",
+      "cn": "墨西哥"
+    },
+    "latitude": "23.00000000",
+    "longitude": "-102.00000000",
+    "emoji": "🇲🇽",
+    "emojiU": "U+1F1F2 U+1F1FD",
+    "states": [
+      {
+        "id": 3456,
+        "name": "Aguascalientes",
+        "state_code": "AGU",
+        "latitude": "21.88525620",
+        "longitude": "-102.29156770",
+        "type": null
+      },
+      {
+        "id": 3457,
+        "name": "Baja California",
+        "state_code": "BCN",
+        "latitude": "30.84063380",
+        "longitude": "-115.28375850",
+        "type": null
+      },
+      {
+        "id": 3460,
+        "name": "Baja California Sur",
+        "state_code": "BCS",
+        "latitude": "26.04444460",
+        "longitude": "-111.66607250",
+        "type": null
+      },
+      {
+        "id": 3475,
+        "name": "Campeche",
+        "state_code": "CAM",
+        "latitude": "19.83012510",
+        "longitude": "-90.53490870",
+        "type": null
+      },
+      {
+        "id": 3451,
+        "name": "Chiapas",
+        "state_code": "CHP",
+        "latitude": "16.75693180",
+        "longitude": "-93.12923530",
+        "type": null
+      },
+      {
+        "id": 3447,
+        "name": "Chihuahua",
+        "state_code": "CHH",
+        "latitude": "28.63299570",
+        "longitude": "-106.06910040",
+        "type": null
+      },
+      {
+        "id": 3471,
+        "name": "Coahuila",
+        "state_code": "COA",
+        "latitude": "27.05867600",
+        "longitude": "-101.70682940",
+        "type": null
+      },
+      {
+        "id": 3472,
+        "name": "Colima",
+        "state_code": "COL",
+        "latitude": "19.24523420",
+        "longitude": "-103.72408680",
+        "type": null
+      },
+      {
+        "id": 3453,
+        "name": "Durango",
+        "state_code": "DUR",
+        "latitude": "37.27528000",
+        "longitude": "-107.88006670",
+        "type": null
+      },
+      {
+        "id": 3469,
+        "name": "Guanajuato",
+        "state_code": "GUA",
+        "latitude": "21.01901450",
+        "longitude": "-101.25735860",
+        "type": null
+      },
+      {
+        "id": 3459,
+        "name": "Guerrero",
+        "state_code": "GRO",
+        "latitude": "17.43919260",
+        "longitude": "-99.54509740",
+        "type": null
+      },
+      {
+        "id": 3470,
+        "name": "Hidalgo",
+        "state_code": "HID",
+        "latitude": "26.10035470",
+        "longitude": "-98.26306840",
+        "type": null
+      },
+      {
+        "id": 4857,
+        "name": "Jalisco",
+        "state_code": "JAL",
+        "latitude": "20.65953820",
+        "longitude": "-103.34943760",
+        "type": null
+      },
+      {
+        "id": 3450,
+        "name": "México",
+        "state_code": "MEX",
+        "latitude": "23.63450100",
+        "longitude": "-102.55278400",
+        "type": null
+      },
+      {
+        "id": 3473,
+        "name": "Mexico City",
+        "state_code": "CMX",
+        "latitude": "19.43260770",
+        "longitude": "-99.13320800",
+        "type": null
+      },
+      {
+        "id": 3474,
+        "name": "Michoacán",
+        "state_code": "MIC",
+        "latitude": "19.56651920",
+        "longitude": "-101.70682940",
+        "type": null
+      },
+      {
+        "id": 3465,
+        "name": "Morelos",
+        "state_code": "MOR",
+        "latitude": "18.68130490",
+        "longitude": "-99.10134980",
+        "type": null
+      },
+      {
+        "id": 3477,
+        "name": "Nayarit",
+        "state_code": "NAY",
+        "latitude": "21.75138440",
+        "longitude": "-104.84546190",
+        "type": null
+      },
+      {
+        "id": 3452,
+        "name": "Nuevo León",
+        "state_code": "NLE",
+        "latitude": "25.59217200",
+        "longitude": "-99.99619470",
+        "type": null
+      },
+      {
+        "id": 3448,
+        "name": "Oaxaca",
+        "state_code": "OAX",
+        "latitude": "17.07318420",
+        "longitude": "-96.72658890",
+        "type": null
+      },
+      {
+        "id": 3476,
+        "name": "Puebla",
+        "state_code": "PUE",
+        "latitude": "19.04143980",
+        "longitude": "-98.20627270",
+        "type": null
+      },
+      {
+        "id": 3455,
+        "name": "Querétaro",
+        "state_code": "QUE",
+        "latitude": "20.58879320",
+        "longitude": "-100.38988810",
+        "type": null
+      },
+      {
+        "id": 3467,
+        "name": "Quintana Roo",
+        "state_code": "ROO",
+        "latitude": "19.18173930",
+        "longitude": "-88.47913760",
+        "type": null
+      },
+      {
+        "id": 3461,
+        "name": "San Luis Potosí",
+        "state_code": "SLP",
+        "latitude": "22.15646990",
+        "longitude": "-100.98554090",
+        "type": null
+      },
+      {
+        "id": 3449,
+        "name": "Sinaloa",
+        "state_code": "SIN",
+        "latitude": "25.17210910",
+        "longitude": "-107.47951730",
+        "type": null
+      },
+      {
+        "id": 3468,
+        "name": "Sonora",
+        "state_code": "SON",
+        "latitude": "37.98294960",
+        "longitude": "-120.38217240",
+        "type": null
+      },
+      {
+        "id": 3454,
+        "name": "Tabasco",
+        "state_code": "TAB",
+        "latitude": "17.84091730",
+        "longitude": "-92.61892730",
+        "type": null
+      },
+      {
+        "id": 3463,
+        "name": "Tamaulipas",
+        "state_code": "TAM",
+        "latitude": "24.26694000",
+        "longitude": "-98.83627550",
+        "type": null
+      },
+      {
+        "id": 3458,
+        "name": "Tlaxcala",
+        "state_code": "TLA",
+        "latitude": "19.31815400",
+        "longitude": "-98.23749540",
+        "type": null
+      },
+      {
+        "id": 3464,
+        "name": "Veracruz",
+        "state_code": "VER",
+        "latitude": "19.17377300",
+        "longitude": "-96.13422410",
+        "type": null
+      },
+      {
+        "id": 3466,
+        "name": "Yucatán",
+        "state_code": "YUC",
+        "latitude": "20.70987860",
+        "longitude": "-89.09433770",
+        "type": null
+      },
+      {
+        "id": 3462,
+        "name": "Zacatecas",
+        "state_code": "ZAC",
+        "latitude": "22.77085550",
+        "longitude": "-102.58324260",
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "Panama",
+    "iso3": "PAN",
+    "iso2": "PA",
+    "numeric_code": "591",
+    "phone_code": "507",
+    "capital": "Panama City",
+    "currency": "PAB",
+    "currency_name": "Panamanian balboa",
+    "currency_symbol": "B/.",
+    "tld": ".pa",
+    "native": "Panamá",
+    "region": "Americas",
+    "subregion": "Central America",
+    "timezones": [
+      {
+        "zoneName": "America/Panama",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      }
+    ],
+    "translations": {
+      "kr": "파나마",
+      "br": "Panamá",
+      "pt": "Panamá",
+      "nl": "Panama",
+      "hr": "Panama",
+      "fa": "پاناما",
+      "de": "Panama",
+      "es": "Panamá",
+      "fr": "Panama",
+      "ja": "パナマ",
+      "it": "Panama",
+      "cn": "巴拿马"
+    },
+    "latitude": "9.00000000",
+    "longitude": "-80.00000000",
+    "emoji": "🇵🇦",
+    "emojiU": "U+1F1F5 U+1F1E6",
+    "states": [
+      {
+        "id": 1393,
+        "name": "Bocas del Toro Province",
+        "state_code": "1",
+        "latitude": "9.41655210",
+        "longitude": "-82.52077870",
+        "type": null
+      },
+      {
+        "id": 1397,
+        "name": "Chiriquí Province",
+        "state_code": "4",
+        "latitude": "8.58489800",
+        "longitude": "-82.38857830",
+        "type": null
+      },
+      {
+        "id": 1387,
+        "name": "Coclé Province",
+        "state_code": "2",
+        "latitude": "8.62660680",
+        "longitude": "-80.36586500",
+        "type": null
+      },
+      {
+        "id": 1386,
+        "name": "Colón Province",
+        "state_code": "3",
+        "latitude": "9.18519890",
+        "longitude": "-80.05349230",
+        "type": null
+      },
+      {
+        "id": 1385,
+        "name": "Darién Province",
+        "state_code": "5",
+        "latitude": "7.86817130",
+        "longitude": "-77.83672820",
+        "type": null
+      },
+      {
+        "id": 1396,
+        "name": "Emberá-Wounaan Comarca",
+        "state_code": "EM",
+        "latitude": "8.37669830",
+        "longitude": "-77.65361250",
+        "type": null
+      },
+      {
+        "id": 1388,
+        "name": "Guna Yala",
+        "state_code": "KY",
+        "latitude": "9.23443950",
+        "longitude": "-78.19262500",
+        "type": null
+      },
+      {
+        "id": 1389,
+        "name": "Herrera Province",
+        "state_code": "6",
+        "latitude": "7.77042820",
+        "longitude": "-80.72144170",
+        "type": null
+      },
+      {
+        "id": 1390,
+        "name": "Los Santos Province",
+        "state_code": "7",
+        "latitude": "7.59093020",
+        "longitude": "-80.36586500",
+        "type": null
+      },
+      {
+        "id": 1391,
+        "name": "Ngöbe-Buglé Comarca",
+        "state_code": "NB",
+        "latitude": "8.65958330",
+        "longitude": "-81.77870210",
+        "type": null
+      },
+      {
+        "id": 1394,
+        "name": "Panamá Oeste Province",
+        "state_code": "10",
+        "latitude": "9.11967510",
+        "longitude": "-79.29021330",
+        "type": null
+      },
+      {
+        "id": 1395,
+        "name": "Panamá Province",
+        "state_code": "8",
+        "latitude": "9.11967510",
+        "longitude": "-79.29021330",
+        "type": null
+      },
+      {
+        "id": 1392,
+        "name": "Veraguas Province",
+        "state_code": "9",
+        "latitude": "8.12310330",
+        "longitude": "-81.07546570",
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "Paraguay",
+    "iso3": "PRY",
+    "iso2": "PY",
+    "numeric_code": "600",
+    "phone_code": "595",
+    "capital": "Asuncion",
+    "currency": "PYG",
+    "currency_name": "Paraguayan guarani",
+    "currency_symbol": "₲",
+    "tld": ".py",
+    "native": "Paraguay",
+    "region": "Americas",
+    "subregion": "South America",
+    "timezones": [
+      {
+        "zoneName": "America/Asuncion",
+        "gmtOffset": -10800,
+        "gmtOffsetName": "UTC-03:00",
+        "abbreviation": "PYST",
+        "tzName": "Paraguay Summer Time"
+      }
+    ],
+    "translations": {
+      "kr": "파라과이",
+      "br": "Paraguai",
+      "pt": "Paraguai",
+      "nl": "Paraguay",
+      "hr": "Paragvaj",
+      "fa": "پاراگوئه",
+      "de": "Paraguay",
+      "es": "Paraguay",
+      "fr": "Paraguay",
+      "ja": "パラグアイ",
+      "it": "Paraguay",
+      "cn": "巴拉圭"
+    },
+    "latitude": "-23.00000000",
+    "longitude": "-58.00000000",
+    "emoji": "🇵🇾",
+    "emojiU": "U+1F1F5 U+1F1FE",
+    "states": [
+      {
+        "id": 2785,
+        "name": "Alto Paraguay Department",
+        "state_code": "16",
+        "latitude": "-20.08525080",
+        "longitude": "-59.47209040",
+        "type": null
+      },
+      {
+        "id": 2784,
+        "name": "Alto Paraná Department",
+        "state_code": "10",
+        "latitude": "-25.60755460",
+        "longitude": "-54.96118360",
+        "type": null
+      },
+      {
+        "id": 2782,
+        "name": "Amambay Department",
+        "state_code": "13",
+        "latitude": "-22.55902720",
+        "longitude": "-56.02499820",
+        "type": null
+      },
+      {
+        "id": 2780,
+        "name": "Boquerón Department",
+        "state_code": "19",
+        "latitude": "-21.74492540",
+        "longitude": "-60.95400730",
+        "type": null
+      },
+      {
+        "id": 2773,
+        "name": "Caaguazú",
+        "state_code": "5",
+        "latitude": "-25.46458180",
+        "longitude": "-56.01385100",
+        "type": null
+      },
+      {
+        "id": 2775,
+        "name": "Caazapá",
+        "state_code": "6",
+        "latitude": "-26.18277130",
+        "longitude": "-56.37123270",
+        "type": null
+      },
+      {
+        "id": 2771,
+        "name": "Canindeyú",
+        "state_code": "14",
+        "latitude": "-24.13787350",
+        "longitude": "-55.66896360",
+        "type": null
+      },
+      {
+        "id": 2777,
+        "name": "Central Department",
+        "state_code": "11",
+        "latitude": "36.15592290",
+        "longitude": "-95.96620750",
+        "type": null
+      },
+      {
+        "id": 2779,
+        "name": "Concepción Department",
+        "state_code": "1",
+        "latitude": "-23.42142640",
+        "longitude": "-57.43444510",
+        "type": null
+      },
+      {
+        "id": 2783,
+        "name": "Cordillera Department",
+        "state_code": "3",
+        "latitude": "-25.22894910",
+        "longitude": "-57.01116810",
+        "type": null
+      },
+      {
+        "id": 2772,
+        "name": "Guairá Department",
+        "state_code": "4",
+        "latitude": "-25.88109320",
+        "longitude": "-56.29293810",
+        "type": null
+      },
+      {
+        "id": 2778,
+        "name": "Itapúa",
+        "state_code": "7",
+        "latitude": "-26.79236230",
+        "longitude": "-55.66896360",
+        "type": null
+      },
+      {
+        "id": 2786,
+        "name": "Misiones Department",
+        "state_code": "8",
+        "latitude": "-26.84335120",
+        "longitude": "-57.10131880",
+        "type": null
+      },
+      {
+        "id": 2781,
+        "name": "Ñeembucú Department",
+        "state_code": "12",
+        "latitude": "-27.02991140",
+        "longitude": "-57.82539500",
+        "type": null
+      },
+      {
+        "id": 2774,
+        "name": "Paraguarí Department",
+        "state_code": "9",
+        "latitude": "-25.62621740",
+        "longitude": "-57.15206420",
+        "type": null
+      },
+      {
+        "id": 2770,
+        "name": "Presidente Hayes Department",
+        "state_code": "15",
+        "latitude": "-23.35126050",
+        "longitude": "-58.73736340",
+        "type": null
+      },
+      {
+        "id": 2776,
+        "name": "San Pedro Department",
+        "state_code": "2",
+        "latitude": "-24.19486680",
+        "longitude": "-56.56164700",
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "Peru",
+    "iso3": "PER",
+    "iso2": "PE",
+    "numeric_code": "604",
+    "phone_code": "51",
+    "capital": "Lima",
+    "currency": "PEN",
+    "currency_name": "Peruvian sol",
+    "currency_symbol": "S/.",
+    "tld": ".pe",
+    "native": "Perú",
+    "region": "Americas",
+    "subregion": "South America",
+    "timezones": [
+      {
+        "zoneName": "America/Lima",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "PET",
+        "tzName": "Peru Time"
+      }
+    ],
+    "translations": {
+      "kr": "페루",
+      "br": "Peru",
+      "pt": "Peru",
+      "nl": "Peru",
+      "hr": "Peru",
+      "fa": "پرو",
+      "de": "Peru",
+      "es": "Perú",
+      "fr": "Pérou",
+      "ja": "ペルー",
+      "it": "Perù",
+      "cn": "秘鲁"
+    },
+    "latitude": "-10.00000000",
+    "longitude": "-76.00000000",
+    "emoji": "🇵🇪",
+    "emojiU": "U+1F1F5 U+1F1EA",
+    "states": [
+      {
+        "id": 3685,
+        "name": "Amazonas",
+        "state_code": "AMA",
+        "latitude": null,
+        "longitude": null,
+        "type": null
+      },
+      {
+        "id": 3680,
+        "name": "Áncash",
+        "state_code": "ANC",
+        "latitude": "-9.32504970",
+        "longitude": "-77.56194190",
+        "type": null
+      },
+      {
+        "id": 3699,
+        "name": "Apurímac",
+        "state_code": "APU",
+        "latitude": "-14.05045330",
+        "longitude": "-73.08774900",
+        "type": null
+      },
+      {
+        "id": 3681,
+        "name": "Arequipa",
+        "state_code": "ARE",
+        "latitude": "-16.40904740",
+        "longitude": "-71.53745100",
+        "type": null
+      },
+      {
+        "id": 3692,
+        "name": "Ayacucho",
+        "state_code": "AYA",
+        "latitude": "-13.16387370",
+        "longitude": "-74.22356410",
+        "type": null
+      },
+      {
+        "id": 3688,
+        "name": "Cajamarca",
+        "state_code": "CAJ",
+        "latitude": "-7.16174650",
+        "longitude": "-78.51278550",
+        "type": null
+      },
+      {
+        "id": 3701,
+        "name": "Callao",
+        "state_code": "CAL",
+        "latitude": "-12.05084910",
+        "longitude": "-77.12598430",
+        "type": null
+      },
+      {
+        "id": 3691,
+        "name": "Cusco",
+        "state_code": "CUS",
+        "latitude": "-13.53195000",
+        "longitude": "-71.96746260",
+        "type": null
+      },
+      {
+        "id": 3679,
+        "name": "Huancavelica",
+        "state_code": "HUV",
+        "latitude": "-12.78619780",
+        "longitude": "-74.97640240",
+        "type": null
+      },
+      {
+        "id": 3687,
+        "name": "Huanuco",
+        "state_code": "HUC",
+        "latitude": "-9.92076480",
+        "longitude": "-76.24108430",
+        "type": null
+      },
+      {
+        "id": 3700,
+        "name": "Ica",
+        "state_code": "ICA",
+        "latitude": "42.35288320",
+        "longitude": "-71.04300970",
+        "type": null
+      },
+      {
+        "id": 3693,
+        "name": "Junín",
+        "state_code": "JUN",
+        "latitude": "-11.15819250",
+        "longitude": "-75.99263060",
+        "type": null
+      },
+      {
+        "id": 3683,
+        "name": "La Libertad",
+        "state_code": "LAL",
+        "latitude": "13.49069700",
+        "longitude": "-89.30846070",
+        "type": null
+      },
+      {
+        "id": 3702,
+        "name": "Lambayeque",
+        "state_code": "LAM",
+        "latitude": "-6.71976660",
+        "longitude": "-79.90807570",
+        "type": null
+      },
+      {
+        "id": 3695,
+        "name": "Lima",
+        "state_code": "LIM",
+        "latitude": "-12.04637310",
+        "longitude": "-77.04275400",
+        "type": null
+      },
+      {
+        "id": 4922,
+        "name": "Loreto",
+        "state_code": "LOR",
+        "latitude": "-4.37416430",
+        "longitude": "-76.13042640",
+        "type": null
+      },
+      {
+        "id": 3678,
+        "name": "Madre de Dios",
+        "state_code": "MDD",
+        "latitude": "-11.76687050",
+        "longitude": "-70.81199530",
+        "type": null
+      },
+      {
+        "id": 3698,
+        "name": "Moquegua",
+        "state_code": "MOQ",
+        "latitude": "-17.19273610",
+        "longitude": "-70.93281380",
+        "type": null
+      },
+      {
+        "id": 3686,
+        "name": "Pasco",
+        "state_code": "PAS",
+        "latitude": "46.23050490",
+        "longitude": "-119.09223160",
+        "type": null
+      },
+      {
+        "id": 3697,
+        "name": "Piura",
+        "state_code": "PIU",
+        "latitude": "-5.17828840",
+        "longitude": "-80.65488820",
+        "type": null
+      },
+      {
+        "id": 3682,
+        "name": "Puno",
+        "state_code": "PUN",
+        "latitude": "-15.84022180",
+        "longitude": "-70.02188050",
+        "type": null
+      },
+      {
+        "id": 3694,
+        "name": "San Martín",
+        "state_code": "SAM",
+        "latitude": "37.08494640",
+        "longitude": "-121.61022160",
+        "type": null
+      },
+      {
+        "id": 3696,
+        "name": "Tacna",
+        "state_code": "TAC",
+        "latitude": "-18.00656790",
+        "longitude": "-70.24627410",
+        "type": null
+      },
+      {
+        "id": 3689,
+        "name": "Tumbes",
+        "state_code": "TUM",
+        "latitude": "-3.55649210",
+        "longitude": "-80.42708850",
+        "type": null
+      },
+      {
+        "id": 3684,
+        "name": "Ucayali",
+        "state_code": "UCA",
+        "latitude": "-9.82511830",
+        "longitude": "-73.08774900",
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "United States",
+    "iso3": "USA",
+    "iso2": "US",
+    "numeric_code": "840",
+    "phone_code": "1",
+    "capital": "Washington",
+    "currency": "USD",
+    "currency_name": "United States dollar",
+    "currency_symbol": "$",
+    "tld": ".us",
+    "native": "United States",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "timezones": [
+      {
+        "zoneName": "America/Adak",
+        "gmtOffset": -36000,
+        "gmtOffsetName": "UTC-10:00",
+        "abbreviation": "HST",
+        "tzName": "Hawaii–Aleutian Standard Time"
+      },
+      {
+        "zoneName": "America/Anchorage",
+        "gmtOffset": -32400,
+        "gmtOffsetName": "UTC-09:00",
+        "abbreviation": "AKST",
+        "tzName": "Alaska Standard Time"
+      },
+      {
+        "zoneName": "America/Boise",
+        "gmtOffset": -25200,
+        "gmtOffsetName": "UTC-07:00",
+        "abbreviation": "MST",
+        "tzName": "Mountain Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Chicago",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Denver",
+        "gmtOffset": -25200,
+        "gmtOffsetName": "UTC-07:00",
+        "abbreviation": "MST",
+        "tzName": "Mountain Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Detroit",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Indiana/Indianapolis",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Indiana/Knox",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Indiana/Marengo",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Indiana/Petersburg",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Indiana/Tell_City",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Indiana/Vevay",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Indiana/Vincennes",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Indiana/Winamac",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Juneau",
+        "gmtOffset": -32400,
+        "gmtOffsetName": "UTC-09:00",
+        "abbreviation": "AKST",
+        "tzName": "Alaska Standard Time"
+      },
+      {
+        "zoneName": "America/Kentucky/Louisville",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Kentucky/Monticello",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Los_Angeles",
+        "gmtOffset": -28800,
+        "gmtOffsetName": "UTC-08:00",
+        "abbreviation": "PST",
+        "tzName": "Pacific Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Menominee",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Metlakatla",
+        "gmtOffset": -32400,
+        "gmtOffsetName": "UTC-09:00",
+        "abbreviation": "AKST",
+        "tzName": "Alaska Standard Time"
+      },
+      {
+        "zoneName": "America/New_York",
+        "gmtOffset": -18000,
+        "gmtOffsetName": "UTC-05:00",
+        "abbreviation": "EST",
+        "tzName": "Eastern Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Nome",
+        "gmtOffset": -32400,
+        "gmtOffsetName": "UTC-09:00",
+        "abbreviation": "AKST",
+        "tzName": "Alaska Standard Time"
+      },
+      {
+        "zoneName": "America/North_Dakota/Beulah",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/North_Dakota/Center",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/North_Dakota/New_Salem",
+        "gmtOffset": -21600,
+        "gmtOffsetName": "UTC-06:00",
+        "abbreviation": "CST",
+        "tzName": "Central Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Phoenix",
+        "gmtOffset": -25200,
+        "gmtOffsetName": "UTC-07:00",
+        "abbreviation": "MST",
+        "tzName": "Mountain Standard Time (North America"
+      },
+      {
+        "zoneName": "America/Sitka",
+        "gmtOffset": -32400,
+        "gmtOffsetName": "UTC-09:00",
+        "abbreviation": "AKST",
+        "tzName": "Alaska Standard Time"
+      },
+      {
+        "zoneName": "America/Yakutat",
+        "gmtOffset": -32400,
+        "gmtOffsetName": "UTC-09:00",
+        "abbreviation": "AKST",
+        "tzName": "Alaska Standard Time"
+      },
+      {
+        "zoneName": "Pacific/Honolulu",
+        "gmtOffset": -36000,
+        "gmtOffsetName": "UTC-10:00",
+        "abbreviation": "HST",
+        "tzName": "Hawaii–Aleutian Standard Time"
+      }
+    ],
+    "translations": {
+      "kr": "미국",
+      "br": "Estados Unidos",
+      "pt": "Estados Unidos",
+      "nl": "Verenigde Staten",
+      "hr": "Sjedinjene Američke Države",
+      "fa": "ایالات متحده آمریکا",
+      "de": "Vereinigte Staaten von Amerika",
+      "es": "Estados Unidos",
+      "fr": "États-Unis",
+      "ja": "アメリカ合衆国",
+      "it": "Stati Uniti D'America",
+      "cn": "美国"
+    },
+    "latitude": "38.00000000",
+    "longitude": "-97.00000000",
+    "emoji": "🇺🇸",
+    "emojiU": "U+1F1FA U+1F1F8",
+    "states": [
+      {
+        "id": 1456,
+        "name": "Alabama",
+        "state_code": "AL",
+        "latitude": "32.31823140",
+        "longitude": "-86.90229800",
+        "type": null
+      },
+      {
+        "id": 1400,
+        "name": "Alaska",
+        "state_code": "AK",
+        "latitude": "64.20084130",
+        "longitude": "-149.49367330",
+        "type": null
+      },
+      {
+        "id": 1424,
+        "name": "American Samoa",
+        "state_code": "AS",
+        "latitude": "-14.27097200",
+        "longitude": "-170.13221700",
+        "type": null
+      },
+      {
+        "id": 1434,
+        "name": "Arizona",
+        "state_code": "AZ",
+        "latitude": "34.04892810",
+        "longitude": "-111.09373110",
+        "type": null
+      },
+      {
+        "id": 1444,
+        "name": "Arkansas",
+        "state_code": "AR",
+        "latitude": "35.20105000",
+        "longitude": "-91.83183340",
+        "type": null
+      },
+      {
+        "id": 1402,
+        "name": "Baker Island",
+        "state_code": "UM-81",
+        "latitude": "0.19362660",
+        "longitude": "-176.47690800",
+        "type": null
+      },
+      {
+        "id": 1416,
+        "name": "California",
+        "state_code": "CA",
+        "latitude": "36.77826100",
+        "longitude": "-119.41793240",
+        "type": null
+      },
+      {
+        "id": 1450,
+        "name": "Colorado",
+        "state_code": "CO",
+        "latitude": "39.55005070",
+        "longitude": "-105.78206740",
+        "type": null
+      },
+      {
+        "id": 1435,
+        "name": "Connecticut",
+        "state_code": "CT",
+        "latitude": "41.60322070",
+        "longitude": "-73.08774900",
+        "type": null
+      },
+      {
+        "id": 1399,
+        "name": "Delaware",
+        "state_code": "DE",
+        "latitude": "38.91083250",
+        "longitude": "-75.52766990",
+        "type": null
+      },
+      {
+        "id": 1437,
+        "name": "District of Columbia",
+        "state_code": "DC",
+        "latitude": "38.90719230",
+        "longitude": "-77.03687070",
+        "type": null
+      },
+      {
+        "id": 1436,
+        "name": "Florida",
+        "state_code": "FL",
+        "latitude": "27.66482740",
+        "longitude": "-81.51575350",
+        "type": null
+      },
+      {
+        "id": 1455,
+        "name": "Georgia",
+        "state_code": "GA",
+        "latitude": "32.16562210",
+        "longitude": "-82.90007510",
+        "type": null
+      },
+      {
+        "id": 1412,
+        "name": "Guam",
+        "state_code": "GU",
+        "latitude": "13.44430400",
+        "longitude": "144.79373100",
+        "type": null
+      },
+      {
+        "id": 1411,
+        "name": "Hawaii",
+        "state_code": "HI",
+        "latitude": "19.89676620",
+        "longitude": "-155.58278180",
+        "type": null
+      },
+      {
+        "id": 1398,
+        "name": "Howland Island",
+        "state_code": "UM-84",
+        "latitude": "0.81132190",
+        "longitude": "-176.61827360",
+        "type": null
+      },
+      {
+        "id": 1460,
+        "name": "Idaho",
+        "state_code": "ID",
+        "latitude": "44.06820190",
+        "longitude": "-114.74204080",
+        "type": null
+      },
+      {
+        "id": 1425,
+        "name": "Illinois",
+        "state_code": "IL",
+        "latitude": "40.63312490",
+        "longitude": "-89.39852830",
+        "type": null
+      },
+      {
+        "id": 1440,
+        "name": "Indiana",
+        "state_code": "IN",
+        "latitude": "40.26719410",
+        "longitude": "-86.13490190",
+        "type": null
+      },
+      {
+        "id": 1459,
+        "name": "Iowa",
+        "state_code": "IA",
+        "latitude": "41.87800250",
+        "longitude": "-93.09770200",
+        "type": null
+      },
+      {
+        "id": 1410,
+        "name": "Jarvis Island",
+        "state_code": "UM-86",
+        "latitude": "-0.37435030",
+        "longitude": "-159.99672060",
+        "type": null
+      },
+      {
+        "id": 1428,
+        "name": "Johnston Atoll",
+        "state_code": "UM-67",
+        "latitude": "16.72950350",
+        "longitude": "-169.53364770",
+        "type": null
+      },
+      {
+        "id": 1406,
+        "name": "Kansas",
+        "state_code": "KS",
+        "latitude": "39.01190200",
+        "longitude": "-98.48424650",
+        "type": null
+      },
+      {
+        "id": 1419,
+        "name": "Kentucky",
+        "state_code": "KY",
+        "latitude": "37.83933320",
+        "longitude": "-84.27001790",
+        "type": null
+      },
+      {
+        "id": 1403,
+        "name": "Kingman Reef",
+        "state_code": "UM-89",
+        "latitude": "6.38333300",
+        "longitude": "-162.41666700",
+        "type": null
+      },
+      {
+        "id": 1457,
+        "name": "Louisiana",
+        "state_code": "LA",
+        "latitude": "30.98429770",
+        "longitude": "-91.96233270",
+        "type": null
+      },
+      {
+        "id": 1453,
+        "name": "Maine",
+        "state_code": "ME",
+        "latitude": "45.25378300",
+        "longitude": "-69.44546890",
+        "type": null
+      },
+      {
+        "id": 1401,
+        "name": "Maryland",
+        "state_code": "MD",
+        "latitude": "39.04575490",
+        "longitude": "-76.64127120",
+        "type": null
+      },
+      {
+        "id": 1433,
+        "name": "Massachusetts",
+        "state_code": "MA",
+        "latitude": "42.40721070",
+        "longitude": "-71.38243740",
+        "type": null
+      },
+      {
+        "id": 1426,
+        "name": "Michigan",
+        "state_code": "MI",
+        "latitude": "44.31484430",
+        "longitude": "-85.60236430",
+        "type": null
+      },
+      {
+        "id": 1438,
+        "name": "Midway Atoll",
+        "state_code": "UM-71",
+        "latitude": "28.20721680",
+        "longitude": "-177.37349260",
+        "type": null
+      },
+      {
+        "id": 1420,
+        "name": "Minnesota",
+        "state_code": "MN",
+        "latitude": "46.72955300",
+        "longitude": "-94.68589980",
+        "type": null
+      },
+      {
+        "id": 1430,
+        "name": "Mississippi",
+        "state_code": "MS",
+        "latitude": "32.35466790",
+        "longitude": "-89.39852830",
+        "type": null
+      },
+      {
+        "id": 1451,
+        "name": "Missouri",
+        "state_code": "MO",
+        "latitude": "37.96425290",
+        "longitude": "-91.83183340",
+        "type": null
+      },
+      {
+        "id": 1446,
+        "name": "Montana",
+        "state_code": "MT",
+        "latitude": "46.87968220",
+        "longitude": "-110.36256580",
+        "type": null
+      },
+      {
+        "id": 1439,
+        "name": "Navassa Island",
+        "state_code": "UM-76",
+        "latitude": "18.41006890",
+        "longitude": "-75.01146120",
+        "type": null
+      },
+      {
+        "id": 1408,
+        "name": "Nebraska",
+        "state_code": "NE",
+        "latitude": "41.49253740",
+        "longitude": "-99.90181310",
+        "type": null
+      },
+      {
+        "id": 1458,
+        "name": "Nevada",
+        "state_code": "NV",
+        "latitude": "38.80260970",
+        "longitude": "-116.41938900",
+        "type": null
+      },
+      {
+        "id": 1404,
+        "name": "New Hampshire",
+        "state_code": "NH",
+        "latitude": "43.19385160",
+        "longitude": "-71.57239530",
+        "type": null
+      },
+      {
+        "id": 1417,
+        "name": "New Jersey",
+        "state_code": "NJ",
+        "latitude": "40.05832380",
+        "longitude": "-74.40566120",
+        "type": null
+      },
+      {
+        "id": 1423,
+        "name": "New Mexico",
+        "state_code": "NM",
+        "latitude": "34.51994020",
+        "longitude": "-105.87009010",
+        "type": null
+      },
+      {
+        "id": 1452,
+        "name": "New York",
+        "state_code": "NY",
+        "latitude": "40.71277530",
+        "longitude": "-74.00597280",
+        "type": null
+      },
+      {
+        "id": 1447,
+        "name": "North Carolina",
+        "state_code": "NC",
+        "latitude": "35.75957310",
+        "longitude": "-79.01929970",
+        "type": null
+      },
+      {
+        "id": 1418,
+        "name": "North Dakota",
+        "state_code": "ND",
+        "latitude": "47.55149260",
+        "longitude": "-101.00201190",
+        "type": null
+      },
+      {
+        "id": 1431,
+        "name": "Northern Mariana Islands",
+        "state_code": "MP",
+        "latitude": "15.09790000",
+        "longitude": "145.67390000",
+        "type": null
+      },
+      {
+        "id": 4851,
+        "name": "Ohio",
+        "state_code": "OH",
+        "latitude": "40.41728710",
+        "longitude": "-82.90712300",
+        "type": null
+      },
+      {
+        "id": 1421,
+        "name": "Oklahoma",
+        "state_code": "OK",
+        "latitude": "35.46756020",
+        "longitude": "-97.51642760",
+        "type": null
+      },
+      {
+        "id": 1415,
+        "name": "Oregon",
+        "state_code": "OR",
+        "latitude": "43.80413340",
+        "longitude": "-120.55420120",
+        "type": null
+      },
+      {
+        "id": 1448,
+        "name": "Palmyra Atoll",
+        "state_code": "UM-95",
+        "latitude": "5.88850260",
+        "longitude": "-162.07866560",
+        "type": null
+      },
+      {
+        "id": 1422,
+        "name": "Pennsylvania",
+        "state_code": "PA",
+        "latitude": "41.20332160",
+        "longitude": "-77.19452470",
+        "type": null
+      },
+      {
+        "id": 1449,
+        "name": "Puerto Rico",
+        "state_code": "PR",
+        "latitude": "18.22083300",
+        "longitude": "-66.59014900",
+        "type": null
+      },
+      {
+        "id": 1461,
+        "name": "Rhode Island",
+        "state_code": "RI",
+        "latitude": "41.58009450",
+        "longitude": "-71.47742910",
+        "type": null
+      },
+      {
+        "id": 1443,
+        "name": "South Carolina",
+        "state_code": "SC",
+        "latitude": "33.83608100",
+        "longitude": "-81.16372450",
+        "type": null
+      },
+      {
+        "id": 1445,
+        "name": "South Dakota",
+        "state_code": "SD",
+        "latitude": "43.96951480",
+        "longitude": "-99.90181310",
+        "type": null
+      },
+      {
+        "id": 1454,
+        "name": "Tennessee",
+        "state_code": "TN",
+        "latitude": "35.51749130",
+        "longitude": "-86.58044730",
+        "type": null
+      },
+      {
+        "id": 1407,
+        "name": "Texas",
+        "state_code": "TX",
+        "latitude": "31.96859880",
+        "longitude": "-99.90181310",
+        "type": null
+      },
+      {
+        "id": 1432,
+        "name": "United States Minor Outlying Islands",
+        "state_code": "UM",
+        "latitude": "19.28231920",
+        "longitude": "166.64704700",
+        "type": null
+      },
+      {
+        "id": 1413,
+        "name": "United States Virgin Islands",
+        "state_code": "VI",
+        "latitude": "18.33576500",
+        "longitude": "-64.89633500",
+        "type": null
+      },
+      {
+        "id": 1414,
+        "name": "Utah",
+        "state_code": "UT",
+        "latitude": "39.32098010",
+        "longitude": "-111.09373110",
+        "type": null
+      },
+      {
+        "id": 1409,
+        "name": "Vermont",
+        "state_code": "VT",
+        "latitude": "44.55880280",
+        "longitude": "-72.57784150",
+        "type": null
+      },
+      {
+        "id": 1427,
+        "name": "Virginia",
+        "state_code": "VA",
+        "latitude": "37.43157340",
+        "longitude": "-78.65689420",
+        "type": null
+      },
+      {
+        "id": 1405,
+        "name": "Wake Island",
+        "state_code": "UM-79",
+        "latitude": "19.27961900",
+        "longitude": "166.64993480",
+        "type": null
+      },
+      {
+        "id": 1462,
+        "name": "Washington",
+        "state_code": "WA",
+        "latitude": "47.75107410",
+        "longitude": "-120.74013850",
+        "type": null
+      },
+      {
+        "id": 1429,
+        "name": "West Virginia",
+        "state_code": "WV",
+        "latitude": "38.59762620",
+        "longitude": "-80.45490260",
+        "type": null
+      },
+      {
+        "id": 1441,
+        "name": "Wisconsin",
+        "state_code": "WI",
+        "latitude": "43.78443970",
+        "longitude": "-88.78786780",
+        "type": null
+      },
+      {
+        "id": 1442,
+        "name": "Wyoming",
+        "state_code": "WY",
+        "latitude": "43.07596780",
+        "longitude": "-107.29028390",
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "Uruguay",
+    "iso3": "URY",
+    "iso2": "UY",
+    "numeric_code": "858",
+    "phone_code": "598",
+    "capital": "Montevideo",
+    "currency": "UYU",
+    "currency_name": "Uruguayan peso",
+    "currency_symbol": "$",
+    "tld": ".uy",
+    "native": "Uruguay",
+    "region": "Americas",
+    "subregion": "South America",
+    "timezones": [
+      {
+        "zoneName": "America/Montevideo",
+        "gmtOffset": -10800,
+        "gmtOffsetName": "UTC-03:00",
+        "abbreviation": "UYT",
+        "tzName": "Uruguay Standard Time"
+      }
+    ],
+    "translations": {
+      "kr": "우루과이",
+      "br": "Uruguai",
+      "pt": "Uruguai",
+      "nl": "Uruguay",
+      "hr": "Urugvaj",
+      "fa": "اروگوئه",
+      "de": "Uruguay",
+      "es": "Uruguay",
+      "fr": "Uruguay",
+      "ja": "ウルグアイ",
+      "it": "Uruguay",
+      "cn": "乌拉圭"
+    },
+    "latitude": "-33.00000000",
+    "longitude": "-56.00000000",
+    "emoji": "🇺🇾",
+    "emojiU": "U+1F1FA U+1F1FE",
+    "states": [
+      {
+        "id": 3205,
+        "name": "Artigas Department",
+        "state_code": "AR",
+        "latitude": "-30.61751120",
+        "longitude": "-56.95945590",
+        "type": null
+      },
+      {
+        "id": 3213,
+        "name": "Canelones Department",
+        "state_code": "CA",
+        "latitude": "-34.54087170",
+        "longitude": "-55.93076000",
+        "type": null
+      },
+      {
+        "id": 3211,
+        "name": "Cerro Largo Department",
+        "state_code": "CL",
+        "latitude": "-32.44110320",
+        "longitude": "-54.35217530",
+        "type": null
+      },
+      {
+        "id": 3208,
+        "name": "Colonia Department",
+        "state_code": "CO",
+        "latitude": "-34.12946780",
+        "longitude": "-57.66051840",
+        "type": null
+      },
+      {
+        "name": "Durazno Department",
+        "type": null
+      },
+      {
+        "name": "Flores Department",
+        "type": null
+      },
+      {
+        "name": "Florida Department",
+        "type": null
+      },
+      {
+        "name": "Lavalleja Department",
+        "type": null
+      },
+      {
+        "name": "Maldonado Department",
+        "type": null
+      },
+      {
+        "name": "Montevideo Department",
+        "type": null
+      },
+      {
+        "name": "Paysandú Department",
+        "type": null
+      },
+      {
+        "name": "Río Negro Department",
+        "type": null
+      },
+      {
+        "name": "Rivera Department",
+        "type": null
+      },
+      {
+        "name": "Rocha Department",
+        "type": null
+      },
+      {
+        "name": "Salto Department",
+        "type": null
+      },
+      {
+        "id": 3204,
+        "name": "San José Department",
+        "state_code": "SJ",
+        "latitude": "37.34929680",
+        "longitude": "-121.90560490",
+        "type": null
+      },
+      {
+        "name": "Soriano Department",
+        "type": null
+      },
+      {
+        "name": "Tacuarembó Department",
+        "type": null
+      },
+      {
+        "name": "Treinta y Tres Department",
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "Venezuela",
+    "phone_code": "58",
+    "native": "Venezuela",
+    "region": "Americas",
+    "subregion": "South America",
+    "timezones": [
+      {
+        "zoneName": "America/Caracas",
+        "gmtOffset": -14400,
+        "gmtOffsetName": "UTC-04:00",
+        "abbreviation": "VET",
+        "tzName": "Venezuelan Standard Time"
+      }
+    ],
+    "translations": {
+      "es": "Venezuela"
+    },
+    "states": [
+      {
+        "name": "Amazonas",
+        "type": "state"
+      },
+      {
+        "name": "Anzoátegui",
+        "type": "state"
+      },
+      {
+        "name": "Apure",
+        "type": "state"
+      },
+      {
+        "name": "Aragua",
+        "type": "state"
+      },
+      {
+        "name": "Barinas",
+        "type": "state"
+      },
+      {
+        "name": "Bolívar",
+        "type": "state"
+      },
+      {
+        "name": "Carabobo",
+        "type": "state"
+      },
+      {
+        "name": "Cojedes",
+        "type": "state"
+      },
+      {
+        "name": "Delta Amacuro",
+        "type": "state"
+      },
+      {
+        "name": "Distrito Capital",
+        "type": "capital district"
+      },
+      {
+        "name": "Falcón",
+        "type": "state"
+      },
+      {
+        "name": "Federal Dependencies of Venezuela",
+        "type": "federal dependency"
+      },
+      {
+        "name": "Guárico",
+        "type": "state"
+      },
+      {
+        "name": "La Guaira",
+        "type": "state"
+      },
+      {
+        "name": "Lara",
+        "type": "state"
+      },
+      {
+        "name": "Mérida",
+        "type": "state"
+      },
+      {
+        "name": "Miranda",
+        "type": "state"
+      },
+      {
+        "name": "Monagas",
+        "type": "state"
+      },
+      {
+        "name": "Nueva Esparta",
+        "type": "state"
+      },
+      {
+        "name": "Portuguesa",
+        "type": "state"
+      },
+      {
+        "name": "Sucre",
+        "type": "state"
+      },
+      {
+        "name": "Táchira",
+        "type": "state"
+      },
+      {
+        "name": "Trujillo",
+        "type": "state"
+      },
+      {
+        "name": "Yaracuy",
+        "type": "state"
+      },
+      {
+        "name": "Zulia",
+        "type": "state"
+      }
+    ]
+  }
+]

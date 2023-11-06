@@ -1,0 +1,19 @@
+.custom-tooltip {
+  font-size: 0.85rem;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.tooltip-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.tooltip-dateLabel {
+  font-weight: 700;
+}
+
+.box-6px {
+  height: 8px;
+  width: 8px;
+}

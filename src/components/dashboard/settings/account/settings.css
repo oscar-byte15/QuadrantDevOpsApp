@@ -1,0 +1,35 @@
+.FormControlLabel-root-isTitle {
+  margin-left: 0 !important;
+  user-select: none;
+}
+
+.FormControlLabel-root-isTitle .MuiFormControlLabel-label h3 {
+  font-family: 'Roboto' !important;
+  font-weight: 400;
+  color: #2d2d2d;
+  /* font-size: 1.7143rem !important; */
+}
+
+.FormControlLabel-root-isTitleSmall {
+  margin-left: 0 !important;
+  user-select: none;
+}
+
+.FormControlLabel-root-isTitleSmall .MuiFormControlLabel-label h3 {
+  font-family: 'Roboto' !important;
+  font-weight: 300;
+  color: #464646;
+  /* font-size: 1.5rem !important; */
+}
+
+h3 {
+  /* line-height: 1.5 !important; */
+}
+
+.logo-section {
+  height: auto;
+}
+
+.MuiDialogTitle-root .MuiTypography-h6 {
+  color: #2d2d2d;
+}

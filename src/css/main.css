@@ -1,0 +1,23 @@
+/* MAIN */
+
+@import 'quadrant-reset.css';
+@import 'typography.css';
+@import 'dev-helper.css';
+@import 'css-helper.css';
+@import 'quadrant-elements.css';
+@import 'material-elements.css';
+@import 'card.css';
+
+/* COMPONENTS */
+
+@import '../components/header/header.css';
+@import '../components/menu/menu.css';
+@import '../components/dashboard/links/links.css';
+@import '../components/dashboard/analysis/analysis.css';
+@import '../components/charts/charts.css';
+@import '../components/dashboard/commentBox/commentbox.css';
+@import '../components/tables/table.css';
+@import '../components/dashboard/report/common/monthlyScores/montlyScore.css';
+@import '../components/dashboard/report/report.css';
+@import '../components/dashboard/settings/styles.css';
+@import '../components/dashboard/settings/notifications/notifications.css';

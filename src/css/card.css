@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+  text-align: left;
+}
+
+.card .sub-title {
+  font-size: 1.35rem;
+  margin-top: 0.3em;
+  text-transform: capitalize;
+}
+
+/*.card-header {
+    margin: 15px;
+    padding: 0 !important;
+}*/
+
+.card-header .MuiCardHeader-content {
+  width: 1%;
+}
+
+.card-header .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-content {
+  padding: 0 15px !important;
+}
+
+.card-actions {
+  margin: 25px 15px 15px 15px;
+  padding: 0 !important;
+}
+
+.card h1 {
+  font-family: 'Roboto';
+  font-size: 5rem;
+}
