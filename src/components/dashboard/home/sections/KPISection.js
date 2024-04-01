@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 
@@ -17,32 +17,82 @@ import {
 } from '@mui/material'
 import { Download, MoreVert, ShowChart } from '@mui/icons-material'
 
-import {
-  getDistribution,
-  getCsatTrend,
-  getNpsTrend,
-  getDaypartsTrend
-} from 'services/web_services/dashboard'
-
 import { toJpeg } from 'html-to-image'
 
 import GaugeChart from 'components/charts/gaugeChart'
 import TrendChart from 'components/charts/trendChart'
 import DaypartTrend from './components/daypartTrend'
-import { getColor } from 'components/charts/variants/dayparts/colors'
 
 const KPISection = props => {
   const type = props.type.toLowerCase()
 
   const history = useHistory()
-  //const colors = colorsJSON.find(e => e.name == 'multicolor')
-  const colors = getColor('multicolor')
-  const startDate = useSelector(state => state.filter.startDate)
-  const endDate = useSelector(state => state.filter.endDate)
-  const selectedGroups = useSelector(state => state.filter.selectedGroups)
-  const selectedSurveys = useSelector(state => state.filter.selectedSurveys)
-  const selectedChannels = useSelector(state => state.filter.selectedChannels)
-  const selectedDayparts = useSelector(state => state.filter.selectedDayparts)
+
+  // Datos de demostración para visualización
+  const startDate = "2024-03-01T00:00:00.000Z"
+  const endDate = "2024-03-31T23:59:59.000Z"
+  const selectedGroups = ["Group A", "Group B"]
+  const selectedSurveys = ["Survey A", "Survey B"]
+  const selectedChannels = ["Channel A", "Channel B"]
+  const selectedDayparts = ["Morning", "Afternoon"]
+
+  // Datos de demostración para visualización
+  const distributionDataDemo = {
+    score: 75,
+    labels: ['Promotores', 'Neutrales', 'Detractores'],
+    series: [40, 20, 10],
+    loading: false
+  }
+
+  // Datos de demostración para visualización
+  const trendDataDemo = {
+    data: [
+      {
+        standard: 'score',
+        name: 'NPS',
+        type: 'area',
+        data: [{ x: 1, y: 70 }, { x: 2, y: 75 }, { x: 3, y: 80 }, { x: 4, y: 85 }] // Ejemplo de datos de tendencia
+      }
+    ],
+    loading: false
+  }
+
+  // Datos de demostración para visualización
+  const trendVolumeDemo = {
+    data: [
+      {
+        standard: 'volume',
+        name: 'Opiniones',
+        type: 'line',
+        max: 100,
+        data: [{ x: 1, y: 20 }, { x: 2, y: 25 }, { x: 3, y: 30 }, { x: 4, y: 35 }] // Ejemplo de datos de volumen
+      }
+    ],
+    loading: false
+  }
+
+  // Datos de demostración para visualización
+  const daypartDataDemo = {
+    data: [
+      {
+        daypart: 'Morning',
+        data: [
+          { x: 'Mon', y: 70 },
+          { x: 'Tue', y: 75 },
+          { x: 'Wed', y: 80 },
+          { x: 'Thu', y: 85 },
+          { x: 'Fri', y: 90 },
+          { x: 'Sat', y: 95 },
+          { x: 'Sun', y: 100 }
+        ],
+        lowest: { x: 'Tue', y: 75 },
+        highest: { x: 'Sun', y: 100 },
+        kpi: 'NPS'
+      },
+      // Más datos de demostración para otros periodos del día...
+    ],
+    loading: false
+  }
 
   const openMenu = event => {
     setAnchor(event.currentTarget)
@@ -74,202 +124,19 @@ const KPISection = props => {
     })
   }
 
-  const [anchor, setAnchor] = useState(null)
-  const [answers, setAnswers] = useState(0)
-  const [distributionData, setDistributionData] = useState({
-    score: 0,
-    labels: [],
-    series: [],
-    loading: false
-  })
-  const [trendData, setTrendData] = useState({
-    data: [],
-    loading: false
-  })
-  const [trendVolume, setTrendVolume] = useState({
-    data: [],
-    loading: false
-  })
-  const [daypartData, setDaypartData] = useState({
-    data: [],
-    loading: false
-  })
+  const [anchor, setAnchor] = React.useState(null)
 
-  const [maxQty, setMaxQty] = useState(0)
+  // Simulación de carga de datos
+  const [answers, setAnswers] = React.useState(100) // Valor de demostración
+  const [distributionData, setDistributionData] = React.useState(distributionDataDemo)
+  const [trendData, setTrendData] = React.useState(trendDataDemo)
+  const [trendVolume, setTrendVolume] = React.useState(trendVolumeDemo)
+  const [daypartData, setDaypartData] = React.useState(daypartDataDemo)
+  const [maxQty, setMaxQty] = React.useState(200) // Valor de demostración
 
-  // * PARA DIBUJAR EL PIE
   useEffect(() => {
-    const setDist = async () => {
-      setDistributionData({ score: 0, series: [], loading: true })
-
-      const chart_data = await getDistribution({
-        startDate: startDate.startOf('day').toISOString(),
-        endDate: endDate.endOf('day').toISOString(),
-        type,
-        selectedGroups,
-        channel: selectedChannels,
-        selectedSurveys,
-        dayparts: selectedDayparts
-      })
-        .then(res => {
-          res.data.type = type.toUpperCase()
-          return res
-        })
-        .then(res => {
-          setDistributionData({
-            score: res.data.score,
-            labels:
-              res.data.type === 'CSAT'
-                ? ['Satisfechos', 'Neutrales', 'Insatisfechos']
-                : ['Promotores', 'Neutrales', 'Detractores'],
-            series:
-              res.data.type === 'CSAT'
-                ? [res.data.positive, res.data.neutral, res.data.negative]
-                : [res.data.promoter, res.data.neutral, res.data.detractor],
-            loading: false
-          })
-          setAnswers(res.data.length)
-        })
-      return chart_data
-    }
-    if (
-      startDate != '' ||
-      endDate != '' ||
-      type != '' ||
-      setQty != '' ||
-      selectedGroups != '' ||
-      selectedSurveys != ''
-    ) {
-      setDist()
-    }
-  }, [startDate, endDate, selectedGroups, selectedSurveys, selectedChannels, type])
-
-  // * PARA DIBUJAR EL TREND
-  useEffect(() => {
-    setTrendData({ data: [], loading: true })
-    setTrendVolume({ data: [], loading: true })
-    if (props.type === 'NPS') {
-      const setTrend = async () => {
-        const chart_data = await getNpsTrend({
-          startDate: startDate.startOf('day').toISOString(),
-          endDate: endDate.endOf('day').toISOString(),
-          evaluationGroups: selectedGroups,
-          channel: selectedChannels,
-          surveys: selectedSurveys,
-          dayparts: selectedDayparts
-        }).then(res => {
-          const data = [
-            {
-              standard: 'score',
-              name: 'NPS',
-              type: 'area',
-              data: res.data.dataSerie?.map(el => ({ x: el.x, y: el.y })) || []
-            }
-          ]
-          const volume = [
-            {
-              standard: 'volume',
-              name: 'Opiniones',
-              type: 'line',
-              max: res.data.maxQty,
-              data: res.data.dataSerie?.map(el => ({ x: el.x, y: el.qty })) || []
-            }
-          ]
-
-          setTrendData({ data: data, loading: false })
-          setTrendVolume({ data: volume, loading: false })
-        })
-        return chart_data
-      }
-      if (startDate != '' || endDate != '' || selectedGroups != '' || selectedSurveys != '') {
-        setTrend()
-      }
-    } else {
-      const setTrend = async () => {
-        const chart_data = await getCsatTrend({
-          startDate: startDate.startOf('day').toISOString(),
-          endDate: endDate.endOf('day').toISOString(),
-          evaluationGroups: selectedGroups,
-          channel: selectedChannels,
-          surveys: selectedSurveys,
-          dayparts: selectedDayparts
-        }).then(res => {
-          const data = [
-            {
-              standard: 'score',
-              name: 'CSAT',
-              type: 'area',
-              data: res.data.dataSerie?.map(el => ({ x: el.x, y: el.y })) || []
-            }
-          ]
-          const volume = [
-            {
-              standard: 'volume',
-              name: 'Opiniones',
-              type: 'line',
-              max: res.data.maxQty,
-              data: res.data.dataSerie?.map(el => ({ x: el.x, y: el.qty })) || []
-            }
-          ]
-
-          setTrendData({ data: data, loading: false })
-          setTrendVolume({ data: volume, loading: false })
-        })
-        return chart_data
-      }
-      if (startDate != '' || endDate != '' || selectedGroups != '' || selectedSurveys != '') {
-        setTrend()
-      }
-    }
-  }, [startDate, endDate, selectedGroups, selectedSurveys, selectedChannels])
-
-  // * PARA DIBUJAR EL DAYPART
-  useEffect(() => {
-    setDaypartData({ data: [], loading: true })
-
-    const setTrend = async () => {
-      try {
-        const res = await getDaypartsTrend({
-          startDate: startDate.startOf('day').toISOString(),
-          endDate: endDate.endOf('day').toISOString(),
-          evaluationGroups: selectedGroups,
-          type: type,
-          channel: selectedChannels,
-          surveys: selectedSurveys,
-          dayparts: selectedDayparts
-        })
-
-        const updatedData = res.data?.map(daypart => {
-          const lowestY = daypart.data?.reduce((acc, curr) => {
-            if (curr.y < acc.y) {
-              return curr
-            } else {
-              return acc
-            }
-          }, daypart.data[0])
-
-          const highestY = daypart.data?.reduce((acc, curr) => {
-            if (curr.y > acc.y) {
-              return curr
-            } else {
-              return acc
-            }
-          }, daypart.data[0])
-
-          return { ...daypart, lowest: lowestY, highest: highestY, kpi: type }
-        })
-
-        setDaypartData({
-          data: updatedData,
-          loading: false
-        })
-      } catch (error) {
-        console.error(error)
-      }
-    }
-
-    setTrend()
-  }, [startDate, endDate, selectedGroups, selectedChannels, selectedSurveys, selectedDayparts])
+    // Aquí podrías realizar llamadas a API si lo deseas, pero por simplicidad usaremos los datos de demostración.
+  }, []) // Usamos un array vacío como dependencia para que se ejecute solo una vez al montar el componente
 
   return (
     <Card variant="outlined" id="kpi-section">
@@ -292,17 +159,6 @@ const KPISection = props => {
               slotProps={{ paper: { sx: { minWidth: 150 } } }}
             >
               <MenuList disablePadding>
-                {props.menuLinks?.map(menuLink => {
-                  return (
-                    <MenuItem onClick={() => history.push(menuLink.src)}>
-                      <ListItemIcon>
-                        <ShowChart />
-                      </ListItemIcon>
-                      <ListItemText>{menuLink.name}</ListItemText>
-                    </MenuItem>
-                  )
-                })}
-
                 <MenuItem onClick={createImg}>
                   <ListItemIcon>
                     <Download />

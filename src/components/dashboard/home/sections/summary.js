@@ -1,17 +1,3 @@
-import {
-  Grid,
-  Stack,
-  Card,
-  CardHeader,
-  CardContent,
-  Typography,
-  IconButton,
-  Menu,
-  MenuList,
-  MenuItem,
-  ListItemIcon,
-  ListItemText
-} from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { getSummaryCardsInfo } from 'services/web_services/dashboard'
@@ -26,12 +12,12 @@ import { Download, MoreVert, ShowChart } from '@mui/icons-material'
 import { sum } from 'lodash'
 
 const SummarySection = _ => {
-  const startDate = useSelector(state => state.filter.startDate)
-  const endDate = useSelector(state => state.filter.endDate)
-  const selectedGroups = useSelector(state => state.filter.selectedGroups)
-  const selectedSurveys = useSelector(state => state.filter.selectedSurveys)
-  const selectedChannels = useSelector(state => state.filter.selectedChannels)
-  const selectedDayparts = useSelector(state => state.filter.selectedDayparts)
+  const defaultStartDate = moment().subtract(7, 'days').format('YYYY-MM-DD')
+  const defaultEndDate = moment().format('YYYY-MM-DD')
+  const defaultSelectedGroups = ['Group A', 'Group B']
+  const defaultSelectedSurveys = ['Survey 1', 'Survey 2']
+  const defaultSelectedChannels = ['Channel A', 'Channel B']
+  const defaultSelectedDayparts = ['Morning', 'Afternoon']
 
   const [summaryData, setSummaryData] = useState({ data: '', loading: false })
 
@@ -68,47 +54,32 @@ const SummarySection = _ => {
   useEffect(() => {
     setSummaryData(prevState => ({ ...prevState, loading: true }))
 
-    let period = moment(endDate.endOf('day')).diff(moment(startDate.startOf('day')), 'days')
-
-    const startComparisonDate = moment(startDate).subtract(period, 'days')
-    const endComparisonDate = moment(endDate).subtract(period, 'days')
-
     const getSummaryData = async (startDate, endDate) => {
       try {
-        const summaryData = await getSummaryCardsInfo({
-          startDate: startDate.startOf('day').toISOString(),
-          endDate: endDate.endOf('day').toISOString(),
-          evaluationGroups: selectedGroups,
-          channel: selectedChannels,
-          surveys: selectedSurveys,
-          dayparts: selectedDayparts
-        })
-
+        // Simulación de datos de respuesta de la API
         return {
-          npsScore: summaryData.data.npsScore,
-          npsQty: summaryData.data.npsQty,
-          csatScore: summaryData.data.csatScore,
-          csatQty: summaryData.data.csatQty,
-          othersQty: summaryData.data.othersQty,
-          congratulationQty: summaryData.data.congratulationQty,
-          suggestionQty: summaryData.data.suggestionQty,
-          complaintQty: summaryData.data.complaintQty,
-          generalQty: summaryData.data.generalQty,
-          commentsQty: summaryData.data.commentsQty,
-          totalQty: summaryData.data.totalQty
+          npsScore: 70,
+          npsQty: 100,
+          csatScore: 80,
+          csatQty: 150,
+          othersQty: 50,
+          congratulationQty: 20,
+          suggestionQty: 15,
+          complaintQty: 10,
+          generalQty: 5,
+          commentsQty: 50,
+          totalQty: 200
         }
       } catch (err) {
-        // console.log(err)
         return null
       }
     }
 
     const fetchSummaryData = async () => {
-      const summary1 = await getSummaryData(startDate, endDate)
-      const summary2 = await getSummaryData(startComparisonDate, endComparisonDate)
+      const summary1 = await getSummaryData(defaultStartDate, defaultEndDate)
+      const summary2 = await getSummaryData(defaultStartDate, defaultEndDate)
 
       if (summary1 && summary2) {
-        // Combine the summary data from both responses
         const combinedSummary = {
           data: [
             {
@@ -116,13 +87,13 @@ const SummarySection = _ => {
               score: '-',
               now: {
                 quantity: summary1.totalQty,
-                startDate: startDate.format('DD/MM/YY'),
-                endDate: endDate.format('DD/MM/YY')
+                startDate: defaultStartDate,
+                endDate: defaultEndDate
               },
               before: {
                 quantity: summary2.totalQty,
-                startDate: startComparisonDate.format('DD/MM/YY'),
-                endDate: endComparisonDate.format('DD/MM/YY')
+                startDate: defaultStartDate,
+                endDate: defaultEndDate
               }
             },
             {
@@ -130,14 +101,14 @@ const SummarySection = _ => {
               now: {
                 score: summary1.npsScore,
                 quantity: summary1.npsQty,
-                startDate: startDate.format('DD/MM/YY'),
-                endDate: endDate.format('DD/MM/YY')
+                startDate: defaultStartDate,
+                endDate: defaultEndDate
               },
               before: {
                 score: summary2.npsScore,
                 quantity: summary2.npsQty,
-                startDate: startComparisonDate.format('DD/MM/YY'),
-                endDate: endComparisonDate.format('DD/MM/YY')
+                startDate: defaultStartDate,
+                endDate: defaultEndDate
               },
               diff: {
                 score: summary1.npsScore / summary2.npsScore,
@@ -149,14 +120,14 @@ const SummarySection = _ => {
               now: {
                 score: summary1.csatScore,
                 quantity: summary1.csatQty,
-                startDate: startDate.format('DD/MM/YY'),
-                endDate: endDate.format('DD/MM/YY')
+                startDate: defaultStartDate,
+                endDate: defaultEndDate
               },
               before: {
                 score: summary2.csatScore,
                 quantity: summary2.csatQty,
-                startDate: startComparisonDate.format('DD/MM/YY'),
-                endDate: startComparisonDate.format('DD/MM/YY')
+                startDate: defaultStartDate,
+                endDate: defaultEndDate
               },
               diff: {
                 score: summary1.csatScore / summary2.csatScore,
@@ -168,13 +139,13 @@ const SummarySection = _ => {
               score: '-',
               now: {
                 quantity: summary1.othersQty,
-                startDate: startDate.format('DD/MM/YY'),
-                endDate: endDate.format('DD/MM/YY')
+                startDate: defaultStartDate,
+                endDate: defaultEndDate
               },
               before: {
                 quantity: summary2.othersQty,
-                startDate: startComparisonDate.format('DD/MM/YY'),
-                endDate: startComparisonDate.format('DD/MM/YY')
+                startDate: defaultStartDate,
+                endDate: defaultEndDate
               },
               diff: {
                 quantity: summary1.othersQty / summary2.othersQty
@@ -185,8 +156,8 @@ const SummarySection = _ => {
               score: '-',
               now: {
                 quantity: summary1.commentsQty,
-                startDate: startDate.format('DD/MM/YY'),
-                endDate: endDate.format('DD/MM/YY'),
+                startDate: defaultStartDate,
+                endDate: defaultEndDate,
                 congratulations: {
                   quantity: summary1.congratulationQty,
                   share: (summary1.congratulationQty / summary1.commentsQty) * 100
@@ -206,8 +177,8 @@ const SummarySection = _ => {
               },
               before: {
                 quantity: summary2.commentsQty,
-                startDate: startComparisonDate.format('DD/MM/YY'),
-                endDate: startComparisonDate.format('DD/MM/YY'),
+                startDate: defaultStartDate,
+                endDate: defaultEndDate,
                 congratulations: {
                   quantity: summary2.congratulationQty,
                   share: (summary2.congratulationQty / summary2.commentsQty) * 100
@@ -244,16 +215,16 @@ const SummarySection = _ => {
     }
 
     fetchSummaryData()
-  }, [startDate, endDate, selectedGroups, selectedSurveys, selectedChannels, selectedDayparts])
+  }, [])
 
   const periodsData = summaryData.periods && summaryData.periods
-  const npsData = summaryData.data && summaryData.data.filter(item => item.type === 'NPS')[0]
-  const csatData = summaryData.data && summaryData.data.filter(item => item.type === 'CSAT')[0]
-  const othersData = summaryData.data && summaryData.data.filter(item => item.type === 'Otros')[0]
-  const totalData = summaryData.data && summaryData.data.filter(item => item.type === 'Total')[0]
+  const npsData = summaryData.data 
+  const csatData = summaryData.data 
+  const othersData = summaryData.data 
+  const totalData = summaryData.data
 
   const commentsData =
-    summaryData.data && summaryData.data.filter(item => item.type === 'Comentarios')[0]
+    summaryData.data 
 
   return (
     <>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import GroupForm from '../groupForm'
 import { Grid, Card, CardContent, CardHeader, CircularProgress, Skeleton } from '@mui/material'
 import httpModule from 'services/httpModule'
@@ -8,12 +8,12 @@ const EditGroup = props => {
   const id = props.match.params.id
   const [group, setGroup] = useState({ data: undefined, loading: true })
 
-  useEffect(() => {
-    if (id)
-      httpModule.get('/v1/evaluationGroups/' + id).then(res => {
-        setGroup({ data: res.data, loading: false })
-      })
-  }, [id])
+  // useEffect(() => {
+  //   if (id)
+  //     httpModule.get('/v1/evaluationGroups/' + id).then(res => {
+  //       setGroup({ data: res.data, loading: false })
+  //     })
+  // }, [id])
 
   return group.loading ? (
     <BodyCard>

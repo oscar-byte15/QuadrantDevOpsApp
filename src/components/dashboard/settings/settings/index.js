@@ -31,7 +31,7 @@ export default function Settings() {
   }
 
   //solo para que Adrian testee integracnion
-  const quadrantClient = useSelector(state => state.auth.quadrantClient.id)
+  const quadrantClient = "Santander Consumer"
 
   return (
     <>

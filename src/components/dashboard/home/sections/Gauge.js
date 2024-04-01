@@ -5,7 +5,7 @@ import { getDistribution } from 'services/web_services/dashboard'
 import GaugeChart from '../../../charts/gaugeChart'
 
 const GaugeSection = props => {
-  const distributionData = props.distributionData
+
   // const [distributionData, setDistributionData] = useState({ score: 0, series: [], loading: false })
   // const startDate = useSelector(state => state.filter.startDate)
   // const endDate = useSelector(state => state.filter.endDate)

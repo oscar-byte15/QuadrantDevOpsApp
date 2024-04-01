@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import httpModule from 'services/httpModule'
 import { useDispatch, useSelector } from 'react-redux'
 import {
@@ -48,8 +48,8 @@ const FilterAppBar = () => {
   //TODO lista de grupos y encuestas solo debería hacer fetching cuando no es superadmin
   const dispatch = useDispatch()
   const shouldShow = useSelector(state => state.filter.shouldShow)
-  const quadrantClient = useSelector(state => state.auth.quadrantClient)
-  const [initialRange, setInitialRange] = useState([filter.startDate, filter.endDate])
+  const quadrantClient = "Santander Consumer"
+  //const [initialRange, setInitialRange] = useState([filter.startDate, filter.endDate])
 
   const ranges = [
     {
@@ -133,56 +133,56 @@ const FilterAppBar = () => {
       ? demoRanges
       : ranges
 
-  const [selectedPoints, setSelectedPoints] = useState([])
-  const [selectedSurveys, setSelectedSurveys] = useState([])
-  const [selectedChannels, setSelectedChannels] = useState([])
-  const [selectedDayparts, setselectedDayparts] = useState([])
+  //const [selectedPoints, setSelectedPoints] = useState([])
+  // const [selectedSurveys, setSelectedSurveys] = useState([])
+  //const [selectedChannels, setSelectedChannels] = useState([])
+  //const [selectedDayparts, setselectedDayparts] = useState([])
 
-  const [surveys, setSurveys] = useState([])
-  const [points, setPoints] = useState([])
-  const [dayparts, setDayparts] = useState([])
+  // const [surveys, setSurveys] = useState([])
+  // const [points, setPoints] = useState([])
+  // const [dayparts, setDayparts] = useState([])
 
-  const [channels, setChannels] = useState([
-    { name: 'Embeded', id: 'CR0A1' },
-    { name: 'Tablet', id: 'CR0B2' },
-    { name: 'QR', id: 'CR0C3' },
-    { name: 'Web', id: 'CR0D4' },
-    { name: 'SMS', id: 'CR0E5' },
-    { name: 'Email', id: 'CR0F6' },
-    { name: 'Whatsapp', id: 'CR0G7' }
-  ])
+  // const [channels, setChannels] = useState([
+  //   { name: 'Embeded', id: 'CR0A1' },
+  //   { name: 'Tablet', id: 'CR0B2' },
+  //   { name: 'QR', id: 'CR0C3' },
+  //   { name: 'Web', id: 'CR0D4' },
+  //   { name: 'SMS', id: 'CR0E5' },
+  //   { name: 'Email', id: 'CR0F6' },
+  //   { name: 'Whatsapp', id: 'CR0G7' }
+  // ])
 
-  useEffect(() => {
-    httpModule.get('/v1/surveys?select=name').then(({ data }) => {
-      setSurveys(data.docs)
-      setSelectedSurveys(data.docs)
-    })
-  }, [])
+  // useEffect(() => {
+  //   httpModule.get('/v1/surveys?select=name').then(({ data }) => {
+  //     setSurveys(data.docs)
+  //     setSelectedSurveys(data.docs)
+  //   })
+  // }, [])
 
-  useEffect(() => {
-    httpModule.get('/v1/evaluationGroups/listEvaluationGroups?select=name').then(({ data }) => {
-      setPoints(data.docs)
-      setSelectedPoints(data.docs)
-    })
-  }, [])
+  // useEffect(() => {
+  //   httpModule.get('/v1/evaluationGroups/listEvaluationGroups?select=name').then(({ data }) => {
+  //     setPoints(data.docs)
+  //     setSelectedPoints(data.docs)
+  //   })
+  // }, [])
 
-  useEffect(() => {
-    getDayparts()
-      .then(res => {
-        const arr = []
-        res.data.map(daypart => {
-          arr.push({
-            name: daypart.name,
-            id: daypart.id,
-            range: [daypart.startTime, daypart.endTime]
-          })
-        })
+  // useEffect(() => {
+  //   getDayparts()
+  //     .then(res => {
+  //       const arr = []
+  //       res.data.map(daypart => {
+  //         arr.push({
+  //           name: daypart.name,
+  //           id: daypart.id,
+  //           range: [daypart.startTime, daypart.endTime]
+  //         })
+  //       })
 
-        setselectedDayparts(arr)
-        setDayparts(arr)
-      })
-      .catch(err => {})
-  }, [])
+  //       setselectedDayparts(arr)
+  //       setDayparts(arr)
+  //     })
+  //     .catch(err => {})
+  // }, [])
 
   const handleChangeDate = date => {
     setInitialRange(date)
@@ -212,9 +212,9 @@ const FilterAppBar = () => {
     setInitialRange(shortcut.getValue())
   }
 
-  useEffect(() => {
-    return () => dispatch(clearFilter())
-  }, [dispatch])
+  // useEffect(() => {
+  //   return () => dispatch(clearFilter())
+  // }, [dispatch])
 
   const handleDrawerToggle = () => {
     dispatch(menuToggle())
@@ -247,11 +247,7 @@ const FilterAppBar = () => {
       <List sx={{ paddingTop: '13px' }}>
         <CardHeader title="Filtro global" />
         <Divider sx={{ margin: '8px 0px 16px 0px' }} />
-        <DateRangePicker
-          value={initialRange}
-          onChange={handleChangeDate}
-          shortcutsList={shortcuts}
-        />
+       
         <ListItem>
           <Grid spacing={1} container>
             {shortcuts.map((shortcut, index) => {
@@ -267,26 +263,26 @@ const FilterAppBar = () => {
             })}
           </Grid>
         </ListItem>
-        <GroupMultiselector
+        {/* <GroupMultiselector
           points={points}
           setSelectedPoints={setSelectedPoints}
           selectedPoints={selectedPoints}
-        />
-        <SurveyMultiselector
+        /> */}
+        {/* <SurveyMultiselector
           surveys={surveys}
           setSelectedSurveys={setSelectedSurveys}
           selectedSurveys={selectedSurveys}
-        />
+        /> */}
         {/* <ChannelMultiselector
               setSelectedChannels={setSelectedChannels}
               selectedChannels={selectedChannels}
             /> */}
 
-        <DaypartMultiselector
+        {/* <DaypartMultiselector
           dayparts={dayparts}
           setselectedDayparts={setselectedDayparts}
           selectedDayparts={selectedDayparts}
-        />
+        /> */}
         <ListItem>
           <Button
             fullWidth
@@ -295,7 +291,7 @@ const FilterAppBar = () => {
             startIcon={<FilterAlt />}
             color="primary"
             disableElevation
-            onClick={handleApplyFilter}
+     
           >
             Aplicar
           </Button>

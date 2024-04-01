@@ -8,7 +8,7 @@ import {
   getCsatDistributionByExecutive,
   getNpsDistributionByExecutive
 } from 'services/web_services/surveysAnswersV2'
-import httpModule from 'services/httpModule'
+//import httpModule from 'services/httpModule'
 import BodyCard from 'components/common/bodyCard'
 
 const toNpsChart = params => {
@@ -58,45 +58,45 @@ const CustomReport = props => {
   const { startDate, endDate, selectedGroups } = useSelector(state => state.filter)
   const { customRoles, roles } = useSelector(state => state.auth)
 
-  useEffect(() => {
-    if (customRoles.includes(slug) || roles.includes('ADMIN')) {
-      httpModule
-        .get('/v1/quadrantClient/config/custom')
-        .then(res => {
-          const executivesGroupSlug = slug
+  // useEffect(() => {
+  //   if (customRoles.includes(slug) || roles.includes('ADMIN')) {
+  //     httpModule
+  //       .get('/v1/quadrantClient/config/custom')
+  //       .then(res => {
+  //         const executivesGroupSlug = slug
 
-          if (!res?.data?.custom.find(entry => entry.slug === slug)) {
-            alert('Error, ya no tienes asignado este reporte o ya no existe')
-            props.history.push('/')
-          }
-          const promise1 = getNpsDistributionByExecutive(
-            startDate,
-            endDate,
-            selectedGroups,
-            executivesGroupSlug
-          )
-          const promise2 = getCsatDistributionByExecutive(
-            startDate,
-            endDate,
-            selectedGroups,
-            executivesGroupSlug
-          )
+  //         if (!res?.data?.custom.find(entry => entry.slug === slug)) {
+  //           alert('Error, ya no tienes asignado este reporte o ya no existe')
+  //           props.history.push('/')
+  //         }
+  //         const promise1 = getNpsDistributionByExecutive(
+  //           startDate,
+  //           endDate,
+  //           selectedGroups,
+  //           executivesGroupSlug
+  //         )
+  //         const promise2 = getCsatDistributionByExecutive(
+  //           startDate,
+  //           endDate,
+  //           selectedGroups,
+  //           executivesGroupSlug
+  //         )
 
-          Promise.all([promise1, promise2]).then(res => {
-            setData({ nps: res[0].data, csat: res[1].data })
-          })
-          const config = res.data.custom.find(report => report.slug === slug)
+  //         Promise.all([promise1, promise2]).then(res => {
+  //           setData({ nps: res[0].data, csat: res[1].data })
+  //         })
+  //         const config = res.data.custom.find(report => report.slug === slug)
 
-          setCustomConfig(config)
-        })
-        .catch(error => {
-          console.error({ error })
-          props.history.push('/')
-        })
-    } else {
-      props.history.push('/')
-    }
-  }, [startDate, endDate])
+  //         setCustomConfig(config)
+  //       })
+  //       .catch(error => {
+  //         console.error({ error })
+  //         props.history.push('/')
+  //       })
+  //   } else {
+  //     props.history.push('/')
+  //   }
+  // }, [startDate, endDate])
 
   return (
     <BodyCard>

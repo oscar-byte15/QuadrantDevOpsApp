@@ -31,7 +31,7 @@ import 'tippy.js/animations/shift-toward-subtle.css'
 import { AlternateEmail, LinkTwoTone, Mail, MailTwoTone } from '@mui/icons-material'
 
 const ExcelBulkDialog = ({ open, onClose, surveySlug, contact, templateName }) => {
-  const quadrantClientName = useSelector(state => state.auth.quadrantClient.name)
+  const quadrantClientName = "Santander Consumer"
   const [step, setStep] = useState(0)
   const [submitting, setSubmitting] = useState(false)
   const [data, setData] = React.useState([])

@@ -1,28 +1,28 @@
 import { TextField, Autocomplete, Button } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-import httpModule from 'services/httpModule'
+//import httpModule from 'services/httpModule'
 
 export const AddTag = ({ handleAddTag, excludedTags }) => {
   const [open, setOpen] = useState(false)
   const [allTags, setAllTags] = useState([])
 
-  useEffect(() => {
-    if (open)
-      httpModule.get('/v1/tags').then(res => {
-        const filteredTags = res.data.filter(tag => !excludedTags.includes(tag))
-        setAllTags(filteredTags)
-      })
-  }, [open])
+  // useEffect(() => {
+  //   if (open)
+  //     httpModule.get('/v1/tags').then(res => {
+  //       const filteredTags = res.data.filter(tag => !excludedTags.includes(tag))
+  //       setAllTags(filteredTags)
+  //     })
+  // }, [open])
 
   const handleFocus = () => setOpen(true)
 
   const handleAdd = async () => {
     const newtag = document.getElementById('new-tag')
 
-    if (newtag.value && !excludedTags.includes(newtag.value)) {
-      await httpModule.post('/v1/tags', { tag: newtag.value })
-      handleAddTag(newtag.value)
-    }
+    // if (newtag.value && !excludedTags.includes(newtag.value)) {
+    //   await httpModule.post('/v1/tags', { tag: newtag.value })
+    //   handleAddTag(newtag.value)
+    // }
   }
 
   return (

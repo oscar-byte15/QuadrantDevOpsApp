@@ -45,25 +45,14 @@ export default function Menu() {
   const menu = useSelector(state => state.menu)
   const auth = useSelector(state => state.auth)
   const theme = useTheme()
-
+  const nameSplit = 'Demo'
   let avatarLetters = ''
-  const nameSplit = auth.name.split(' ')
   for (let i = 0; i < nameSplit.length && i < 2; i++) avatarLetters += nameSplit[i][0]
   const [showSignOutConfirmation, setShowSignOutConfirmation] = useState(false)
   const [btnOpen, setBtnOpen] = useState(null)
   const [isPinkberry, setIsPinkberry] = useState(false)
 
   useEffect(() => {
-    if (auth.quadrantClient.id === '6345d490fcf7ad2a6c2e61ca') {
-      setIsPinkberry(true)
-      MENU_OPTIONS.REPORT.subMenu.PINKBERRY = {
-        id: 'pinkberryReport',
-        buttonText: 'Reporte Pinkberry',
-        icon: null,
-        class: null
-      }
-    }
-
     return () => {
       setIsPinkberry(false)
       return (MENU_OPTIONS.REPORT = {
@@ -97,35 +86,7 @@ export default function Menu() {
         }
       })
     }
-  }, [auth])
-
-  useEffect(() => {
-    if (!auth.isSuperAdmin && auth.quadrantClient.id === '5e18d96a5579be3ce0000165') {
-      const isAdmin = auth.roles.includes('ADMIN')
-
-      MENU_OPTIONS.CUSTOM = {
-        id: 'custom',
-        buttonText: 'Reportes Custom',
-        icon: <Custom />,
-        subMenu: {}
-      }
-
-      httpModule.get('/v1/quadrantClient/config/custom').then(res => {
-        res.data?.custom?.forEach(report => {
-          if (auth.customRoles?.includes(report.slug) || isAdmin) {
-            MENU_OPTIONS.CUSTOM.subMenu[report.slug] = {
-              type: 'customReport',
-              id: report.slug,
-              buttonText: report.title,
-              href: '/quadrant/custom/' + report.slug
-            }
-          }
-        })
-      })
-    }
-
-    return () => (MENU_OPTIONS.CUSTOM = null)
-  }, [auth])
+  }, [])
 
   const handleCollapsedBtnClick = itemId => {
     setBtnOpen(btnOpen === itemId ? null : itemId)
@@ -421,13 +382,13 @@ export default function Menu() {
   }
 
   const getMenuButton = item => {
-    if (!item.perm_roles || auth.roles.some(r => item.perm_roles.includes(r))) {
+   
       if (item.subMenu && Object.keys(item.subMenu).length > 0) {
         return getCollapsedButton(item)
       } else {
         return getNormalButton(item)
       }
-    }
+    
   }
 
   const drawerList = (
@@ -454,28 +415,18 @@ export default function Menu() {
       >
         <Avatar>{avatarLetters}</Avatar>
         <Typography sx={{ fontSize: { xs: '1.1rem!important', sm: '1rem!important' } }}>
-          {auth.name}
+          {'Admin SC'}
         </Typography>
         <Typography sx={{ fontSize: { xs: '1.1rem!important', sm: '1rem!important' } }}>
-          {auth.quadrantClient.name}
+        {'Santander Consumer'}
         </Typography>
         <Typography sx={{ fontSize: { xs: '1.1rem!important', sm: '1rem!important' } }}>
-          {auth.email}
+        {'santanderconsumer@quadrant.pe'}
         </Typography>
       </Stack>
       <Divider />
       <List>
-        {auth.isSuperAdmin
-          ? Object.keys(ADMIN_OPTIONS).map(key => {
-              let item = ADMIN_OPTIONS[key]
-              return (
-                <ListItemButton key={item.id} value={item.id} onClick={() => onItemClicked(item)}>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.buttonText} />
-                </ListItemButton>
-              )
-            })
-          : Object.keys(MENU_OPTIONS)
+        {Object.keys(MENU_OPTIONS)
               .filter(key => MENU_OPTIONS[key])
               .map(key => {
                 let item = MENU_OPTIONS[key]

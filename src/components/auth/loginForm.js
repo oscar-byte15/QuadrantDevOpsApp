@@ -13,13 +13,12 @@ const LoginSchema = Yup.object().shape({
   email: Yup.string()
     .trim()
     .email('Ingresa una dirección de correo válida')
-    .required('Obligatorio'),
-  password: Yup.string().required('Obligatorio')
+    .required('Obligatorio')
 })
 
 const loginDefaultValues = {
-  email: '',
-  password: ''
+  email: 'demostracion@quadrant.pe',
+  password: '1'
 }
 
 export default function LoginForm() {

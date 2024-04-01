@@ -23,7 +23,6 @@ const TelegramAuth = lazy(() =>
 class App extends Component {
   constructor(props) {
     super(props)
-    this.props.isAuth()
   }
 
   componentDidMount() {
@@ -40,11 +39,10 @@ class App extends Component {
         <BrowserRouter>
           <ScrollToTop>
             <Switch>
-              <NotAuthRoute exact path="/" component={Login} />
-              <AuthRoute path="/quadrant" component={Dashboard} />
-              <AdminAuthRoute path="/admin" component={Dashboard} />
-              <Route path="/login" component={Login} />
-              <Route path="/telegramAuth" component={TelegramAuth} />
+         
+              <Route path="/quadrant" component={Dashboard} />
+              <Route path="/" component={Dashboard} />
+              
               <Redirect from="*" to={'/'} />
             </Switch>
           </ScrollToTop>

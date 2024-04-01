@@ -13,29 +13,7 @@ const columns = [
 ]
 
 const TableChart = () => {
-  let filter = useSelector(state => state.filter)
-
-  let [tableData, setTableData] = useState(false)
-  useEffect(() => {
-    getExperienceByGroup({
-      startDate: filter.startDate.startOf('day').toISOString(),
-      endDate: filter.endDate.endOf('day').toISOString(),
-      evaluationGroups: filter.selectedGroups,
-      channel: filter.selectedChannels,
-      surveys: filter.selectedSurveys,
-      dayparts: filter.selectedDayparts
-    }).then(res => {
-      setTableData(res.data)
-    })
-  }, [
-    filter.startDate,
-    filter.endDate,
-    filter.selectedGroups,
-    filter.selectedSurveys,
-    filter.selectedChannels,
-    filter.selectedDayparts
-  ])
-
+  
   return (
     <Card variant="outlined">
       <CardHeader title="Experiencia en números" />

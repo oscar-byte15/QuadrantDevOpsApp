@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useDispatch } from 'react-redux'
 import { selectOption } from '../../../redux/actions/menu/actionDispatcher'
 import ADMIN_MENU_OPTIONS from '../../menu/menuAdminOptions'
@@ -28,14 +28,14 @@ export default function QuadrantClientsList() {
   const [addFormOpen, setAddFormOpen] = useState(false)
   const [clientToEdit, setClientToEdit] = useState(null)
 
-  useEffect(() => {
-    adminServices.getQuadrantClients().then(res => {
-      let newMap = new Map()
-      for (let client of res.data)
-        newMap.set(client.id, { ...client, active: client.active !== false })
-      setQuadrantClients(newMap)
-    })
-  }, [])
+  // useEffect(() => {
+  //   adminServices.getQuadrantClients().then(res => {
+  //     let newMap = new Map()
+  //     for (let client of res.data)
+  //       newMap.set(client.id, { ...client, active: client.active !== false })
+  //     setQuadrantClients(newMap)
+  //   })
+  // }, [])
 
   const handleClickOpenAddform = () => {
     setAddFormOpen(true)
